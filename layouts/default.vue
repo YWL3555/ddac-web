@@ -1,8 +1,26 @@
 <template>
   <div>
+    <h1>Nav bar will be here</h1>
+    <h1>Side bar wil be here</h1>
     <nuxt />
   </div>
 </template>
+
+<script>
+  // import TheHeader from '~/components/Navigation/TheHeader'
+  // import TheSidenav from '~/components/Navigation/TheSidenav'
+
+  export default {
+    components: {
+      // TheHeader,
+      // TheSidenav
+    },
+    data () {
+      return {
+      }
+    }
+  }
+</script>
 
 <style>
 html {
