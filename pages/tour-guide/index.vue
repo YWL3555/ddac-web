@@ -2,33 +2,7 @@
   <div>
   <div id="home-img" class="view">
     <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 text-left">
-            <div class="card card-search">
-              <h3>Book unique places to stay and things to do.</h3>
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Where</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Anywhere in Malaysia">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Start date</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="DD/MM/YYYY">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">End date</label>
-                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="DD/MM/YYYY">
-                </div>
-
-                <button type="submit" class="btn btn-dark float-right">Search</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6">
-          </div>
-        </div>
-      </div>
+      <h1>Tour guides</h1>
     </div>
   </div>
   </div>
@@ -47,7 +21,7 @@ export default {
 <style scoped>
   #home-img {
     height: 100%;
-    background: grey;
+    background: white;
     background-size: cover;
     min-height: 700px;
   }

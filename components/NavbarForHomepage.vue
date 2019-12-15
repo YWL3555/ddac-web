@@ -1,15 +1,11 @@
 <template>
   <div>
-  <b-navbar toggleable="lg" type="light" variant="white" class="nav">
+  <b-navbar toggleable="lg" type="dark" class="navbar-inner">
     <b-navbar-brand to="/">APU Tour Guide Booking System</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
-      <b-nav-form>
-        <b-form-input class="mr-md-2" placeholder="Search"></b-form-input>
-        <b-button class="my-2 my-sm-0" type="submit">Search</b-button>
-      </b-nav-form>
 
 
       <!-- Right aligned nav items -->
@@ -32,8 +28,8 @@
 </template>
 
 <style scoped>
-  .nav {
-    border-bottom: 1px solid silver;
+  .navbar-inner {
+    background: transparent;
   }
 </style>
 

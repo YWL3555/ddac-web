@@ -2,34 +2,98 @@
   <div>
   <div id="home-img" class="view">
     <div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 text-left">
-            <div class="card card-search">
-              <h3>Book unique places to stay and things to do.</h3>
-              <form>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">Where</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Anywhere in Malaysia">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputPassword1">Start date</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="DD/MM/YYYY">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail1">End date</label>
-                  <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="DD/MM/YYYY">
-                </div>
+      <h1>Trips</h1>
+    </div>
+    <section class="posts">
+      <div class="row">
+        <div class="col-sm-3 post-box">
+      <div class="card" style="width: 18rem;" >
+        <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Trip 1</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Book it!</a>
+        </div>
+      </div>
+        </div>
+        <div class="col-sm-3 post-box">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Trip 2</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Book it!</a>
+        </div>
+      </div>
+        </div>
 
-                <button type="submit" class="btn btn-dark float-right">Search</button>
-              </form>
+        <div class="col-sm-3 post-box">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Trip 3</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Book it!</a>
+        </div>
+      </div>
+        </div>
+
+        <div class="col-sm-3 post-box">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/img/post4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Trip 4</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Book it!</a>
+        </div>
+      </div>
+        </div>
+
+        <div class="col-sm-3 post-box">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/img/post5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Trip 5</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Book it!</a>
+        </div>
+      </div>
+        </div>
+
+        <div class="col-sm-3 post-box">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Trip 6</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Book it!</a>
+        </div>
+      </div>
+        </div>
+        <div class="col-sm-3 post-box">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Trip 2</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book it!</a>
             </div>
           </div>
-          <div class="col-lg-6">
+        </div>
+
+        <div class="col-sm-3 post-box">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Trip 3</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Book it!</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+    </section>
   </div>
   </div>
 </template>
@@ -45,17 +109,57 @@ export default {
 </script>
 
 <style scoped>
-  #home-img {
-    height: 100%;
-    background: grey;
-    background-size: cover;
-    min-height: 700px;
+
+  .post-box {
+    margin: auto;
+    margin-bottom: 20px;
   }
-  .card-search {
-    border: 0;
-    border-radius: 0.3rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
-    margin-top: 100px;
-    padding: 30px;
+
+  .card {
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px #ccc;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  @media (min-width: 850px) {
+    .card {
+      width: 400px;
+      margin: auto;
+
+    }
+  }
+
+  .post-thumbnail {
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .post-content {
+    padding: 10px;
+    text-align: center;
+  }
+
+  a:hover .post-content,
+  a:active .post-content {
+    background-color: #ccc;
+  }
+
+  .posts {
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
 </style>
+

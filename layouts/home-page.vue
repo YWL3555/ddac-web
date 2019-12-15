@@ -1,16 +1,12 @@
 <template>
   <div>
-    <navbar/>
-    <div class="main">
-      <nuxt />
-    </div>
 
+    <nuxt />
 
   </div>
 </template>
 
 <script>
-  import Navbar from '~/components/Navbar'
   // import TheHeader from '~/components/Navigation/TheHeader'
   // import TheSidenav from '~/components/Navigation/TheSidenav'
 
@@ -18,7 +14,6 @@
     components: {
       // TheHeader,
       // TheSidenav,
-      Navbar
     },
     data () {
       return {
@@ -26,10 +21,4 @@
     }
   }
 </script>
-
-<style scoped>
-  .main {
-    padding: 10px 20px;
-  }
-</style>
 
