@@ -1,13 +1,12 @@
 <template>
   <div>
   <div id="home-img" class="view">
-    <navbar />
     <div>
       <div class="container">
         <div class="row">
           <div class="col-lg-5 text-left">
             <div class="card card-search">
-              <h3>Explore Malaysia and meet new friends in campus.</h3>
+              <h3>Book unique places to stay and things to do.</h3>
               <form>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Where</label>
@@ -37,11 +36,10 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
-import Navbar from '~/components/Navbar'
 
 export default {
   components: {
-    Navbar
+    Logo
   }
 }
 </script>
@@ -49,9 +47,9 @@ export default {
 <style scoped>
   #home-img {
     height: 100%;
-    background: url("../assets/img/kualalumpurcityscape.jpg")no-repeat fixed;
+    background: grey;
     background-size: cover;
-    min-height: 800px;
+    min-height: 700px;
   }
   .card-search {
     border: 0;

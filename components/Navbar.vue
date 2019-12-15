@@ -1,6 +1,6 @@
 <template>
   <div>
-  <b-navbar toggleable="lg" type="light" variant="light">
+  <b-navbar toggleable="lg" type="dark" class="navbar-inner">
     <b-navbar-brand href="#">APU Tour Guide Booking System</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -28,6 +28,8 @@
 </template>
 
 <style scoped>
-
+  .navbar-inner {
+    background: transparent;
+  }
 </style>
 
