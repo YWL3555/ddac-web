@@ -12,7 +12,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 1</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a  class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
@@ -22,7 +22,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 2</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a  class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 3</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 4</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 5</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 6</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 7</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
@@ -87,7 +87,7 @@
             <div class="card-body">
               <h5 class="card-title">Tour Guide 8</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Book it!</a>
+              <a class="btn btn-primary">Book it!</a>
             </div>
           </div>
         </div>
