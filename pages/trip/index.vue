@@ -134,17 +134,29 @@ export default {
 
 <style scoped>
 
+  .card-body {
+    padding: 5px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    color: grey;
+  }
+
   .post-box {
     margin: auto;
     margin-bottom: 20px;
   }
 
   .card {
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 2px #ccc;
+    /*border: 1px solid #ccc;*/
+    /*box-shadow: 0 2px 2px #ccc;*/
     background-color: white;
     width: 90%;
     margin: auto;
+    border: 0px;
   }
 
   a {
@@ -180,7 +192,7 @@ export default {
   .posts {
     display: flex;
     padding: 20px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
