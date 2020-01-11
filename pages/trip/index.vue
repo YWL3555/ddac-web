@@ -12,8 +12,16 @@
           <div>
             <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Trip 1</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title">Kuala Lumpur</h5>
+                <div>
+                  <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                </div>
+              </div>
+              <div class="card-main-content">
+                <div class="content-title">Explore the beauty of Kuala Lumpur city</div>
+                <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+              </div>
             </div>
           </div>
         </n-link>
@@ -25,8 +33,16 @@
               <div>
                 <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Trip 2</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Ipoh</h5>
+                    <div>
+                      <h5 class="card-title-rating">★ 4.22 (13)</h5>
+                    </div>
+                  </div>
+                  <div class="card-main-content">
+                    <div class="content-title">Explore the foods in Ipoh</div>
+                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                  </div>
                 </div>
               </div>
             </n-link>
@@ -39,8 +55,16 @@
               <div>
                 <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Trip 3</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Penang</h5>
+                    <div>
+                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
+                    </div>
+                  </div>
+                  <div class="card-main-content">
+                    <div class="content-title">Explore the beauty of Penang city</div>
+                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                  </div>
                 </div>
               </div>
             </n-link>
@@ -53,8 +77,16 @@
               <div>
                 <img class="card-img-top" src="../../assets/img/post4.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Trip 4</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Langkawi</h5>
+                    <div>
+                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                    </div>
+                  </div>
+                  <div class="card-main-content">
+                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
+                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                  </div>
                 </div>
               </div>
             </n-link>
@@ -67,8 +99,16 @@
               <div>
                 <img class="card-img-top" src="../../assets/img/post5.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Trip 5</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Langkawi</h5>
+                    <div>
+                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                    </div>
+                  </div>
+                  <div class="card-main-content">
+                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
+                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                  </div>
                 </div>
               </div>
             </n-link>
@@ -81,8 +121,16 @@
               <div>
                 <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Trip 6</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Langkawi</h5>
+                    <div>
+                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                    </div>
+                  </div>
+                  <div class="card-main-content">
+                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
+                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                  </div>
                 </div>
               </div>
             </n-link>
@@ -94,8 +142,16 @@
               <div>
                 <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Trip 7</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Langkawi</h5>
+                    <div>
+                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                    </div>
+                  </div>
+                  <div class="card-main-content">
+                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
+                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                  </div>
                 </div>
               </div>
             </n-link>
@@ -108,8 +164,16 @@
               <div>
                 <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Trip 8</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="d-flex justify-content-between">
+                    <h5 class="card-title">Langkawi</h5>
+                    <div>
+                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                    </div>
+                  </div>
+                  <div class="card-main-content">
+                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
+                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                  </div>
                 </div>
               </div>
             </n-link>
@@ -134,6 +198,9 @@ export default {
 
 <style scoped>
 
+  .content-date {
+  }
+
   .card-body {
     padding: 5px;
   }
@@ -147,6 +214,13 @@ export default {
     margin-top: 6px;
     margin-bottom: 3px;
     color: grey;
+  }
+
+  .card-title-rating {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    color: black;
   }
 
   .post-box {
