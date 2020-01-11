@@ -138,6 +138,10 @@ export default {
     padding: 5px;
   }
 
+  .card-img-top {
+    border-radius: 5px;
+  }
+
   .card-title {
     font-size: 14px;
     margin-top: 6px;
