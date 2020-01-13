@@ -38,10 +38,13 @@
     </div>
     <section>
       <h2>What you'll do</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas diam in arcu cursus euismod quis viverra. At imperdiet dui accumsan sit amet nulla. Vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt. Ante metus dictum at tempor. Vitae aliquet nec ullamcorper sit amet risus nullam eget. Penatibus et magnis dis parturient montes nascetur ridiculus. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Dolor sed viverra ipsum nunc aliquet. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Cursus sit amet dictum sit. At auctor urna nunc id cursus metus aliquam eleifend. Urna id volutpat lacus laoreet non. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Sit amet tellus cras adipiscing. Quis vel eros donec ac odio tempor. Lectus urna duis convallis convallis tellus id interdum velit laoreet. Id cursus metus aliquam eleifend. Volutpat blandit aliquam etiam erat velit scelerisque in dictum. Sed cras ornare arcu dui vivamus arcu felis bibendum ut.
+      <pre class="trip-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Velit dignissim sodales ut eu sem integer vitae. Condimentum mattis pellentesque id nibh. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Sed euismod nisi porta lorem mollis aliquam ut. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Amet mattis vulputate enim nulla aliquet porttitor lacus. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Facilisis leo vel fringilla est. Tincidunt augue interdum velit euismod in pellentesque massa placerat duis. Urna molestie at elementum eu facilisis sed. Purus semper eget duis at tellus at urna condimentum mattis. Egestas purus viverra accumsan in nisl nisi scelerisque. Eu ultrices vitae auctor eu. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
 
-        Senectus et netus et malesuada fames ac turpis. Urna nec tincidunt praesent semper feugiat nibh sed pulvinar proin. Amet risus nullam eget felis eget. Porta lorem mollis aliquam ut porttitor leo a diam. Est ante in nibh mauris cursus mattis molestie a. Etiam dignissim diam quis enim lobortis. Fermentum dui faucibus in ornare quam. Egestas purus viverra accumsan in nisl nisi. Et tortor consequat id porta nibh venenatis cras sed. Nisl rhoncus mattis rhoncus urna. Ut sem viverra aliquet eget sit amet tellus. Sed adipiscing diam donec adipiscing tristique risus nec feugiat in. Nibh tortor id aliquet lectus. In nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Arcu bibendum at varius vel pharetra vel. Faucibus a pellentesque sit amet porttitor eget dolor morbi non. Lectus urna duis convallis convallis. Proin fermentum leo vel orci porta non pulvinar. Id faucibus nisl tincidunt eget nullam non nisi est sit.</p>
+        Viverra maecenas accumsan lacus vel. Egestas maecenas pharetra convallis posuere morbi. Integer vitae justo eget magna. Elit ullamcorper dignissim cras tincidunt. Lacinia quis vel eros donec ac odio. Blandit aliquam etiam erat velit. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc. Ornare lectus sit amet est placerat in egestas erat imperdiet. Nulla aliquet enim tortor at auctor urna nunc id.
+
+        Id semper risus in hendrerit gravida. Duis at consectetur lorem donec massa sapien faucibus. Arcu felis bibendum ut tristique et egestas quis. Massa tempor nec feugiat nisl pretium. Morbi tincidunt augue interdum velit euismod in pellentesque. Non diam phasellus vestibulum lorem sed. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Maecenas sed enim ut sem viverra aliquet eget sit amet. Turpis cursus in hac habitasse. Mi proin sed libero enim sed faucibus turpis in eu. Bibendum at varius vel pharetra. Varius duis at consectetur lorem donec massa sapien faucibus. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. At tellus at urna condimentum mattis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Enim facilisis gravida neque convallis a cras semper. Tempus egestas sed sed risus. Sed felis eget velit aliquet sagittis id consectetur.
+      </pre>
     </section>
   </div>
   </div>
@@ -64,6 +67,10 @@ export default {
 </script>
 
 <style scoped>
+
+  .trip-content {
+    max-width: 100%;
+  }
 
   .available {
     margin-top: auto;
