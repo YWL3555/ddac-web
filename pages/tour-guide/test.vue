@@ -226,6 +226,7 @@ export default {
     border-radius: 5px;
   }
 
+
   /*.guide-name {*/
   /*  !*font-size: 14px;*!*/
   /*  margin-top: 0px;*/

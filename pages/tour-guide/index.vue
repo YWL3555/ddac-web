@@ -110,6 +110,8 @@ export default {
 
 <style scoped>
 
+
+
   .post-box {
     margin: auto;
     margin-bottom: 20px;
