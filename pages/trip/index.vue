@@ -265,6 +265,10 @@ export default {
     }
   }
 
+  .card-img-top {
+    min-height: 180px;
+  }
+
   .post-thumbnail {
     width: 100%;
     height: 200px;
