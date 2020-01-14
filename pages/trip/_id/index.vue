@@ -17,8 +17,9 @@
                 <p>★ 4.32 (43)</p>
               </div>
               <div class="info-2">
-                <dt>Date</dt>
-                <dd>2/3/2020 - 4/3/2020 · 3 days</dd>
+                <dt>Duration</dt>
+                <dd>3 days</dd>
+<!--                <dd>2/3/2020 - 4/3/2020 · 3 days</dd>-->
                 <dt>Group Size</dt>
                 <dd>Up to 8 peoples</dd>
                 <dt>Tour Guide</dt>
@@ -27,8 +28,8 @@
                 <dd>English</dd>
               </div>
               <div style="margin-top: 10px">
-                <b-button variant="danger" style="display:inline;">Join now!</b-button>
-                <h6 class="available" style="display:inline;">3 available</h6>
+                <b-button variant="danger" style="display:inline;">Show dates</b-button>
+                <h6 class="available" style="display:inline;">3 dates available</h6>
               </div>
             </div>
           </div>

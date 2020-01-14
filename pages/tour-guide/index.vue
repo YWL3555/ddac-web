@@ -7,88 +7,192 @@
     <section class="posts">
       <div class="row">
         <div class="col-sm-3 post-box">
+      <div class="card" style="width: 18rem;" >
+        <n-link to='/tour-guide/1'>
+          <div>
+            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+            <div class="card-body">
+              <div class="card-main-content">
+                <div class="guide-name">Yong Wen Li</div>
+                Email: tp045014@mail.apu.edu.my<br/>
+                Phone No: 016-67845354
+              </div>
+              <div class="d-flex justify-content-between">
+<!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                <div>
+                  <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </n-link>
+      </div>
+        </div>
+        <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 1</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a  class="btn btn-primary">Book it!</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 2</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a  class="btn btn-primary">Book it!</a>
-            </div>
+            <n-link to='/tour-guide/2'>
+              <div>
+                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-main-content">
+                    <div class="guide-name">Yong Wen Li</div>
+                    Email: tp045014@mail.apu.edu.my<br/>
+                    Phone No: 016-67845354
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                    <div>
+                      <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </n-link>
           </div>
         </div>
 
         <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 3</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a class="btn btn-primary">Book it!</a>
-            </div>
+          <div class="card" style="width: 18rem;" >
+            <n-link to='/tour-guide/3'>
+              <div>
+                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-main-content">
+                    <div class="guide-name">Yong Wen Li</div>
+                    Email: tp045014@mail.apu.edu.my<br/>
+                    Phone No: 016-67845354
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                    <div>
+                      <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </n-link>
           </div>
         </div>
 
         <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 4</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a class="btn btn-primary">Book it!</a>
-            </div>
+          <div class="card" style="width: 18rem;" >
+            <n-link to='/tour-guide/4'>
+              <div>
+                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-main-content">
+                    <div class="guide-name">Yong Wen Li</div>
+                    Email: tp045014@mail.apu.edu.my<br/>
+                    Phone No: 016-67845354
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                    <div>
+                      <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </n-link>
           </div>
         </div>
 
         <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 5</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a class="btn btn-primary">Book it!</a>
-            </div>
+          <div class="card" style="width: 18rem;" >
+            <n-link to='/tour-guide/5'>
+              <div>
+                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-main-content">
+                    <div class="guide-name">Yong Wen Li</div>
+                    Email: tp045014@mail.apu.edu.my<br/>
+                    Phone No: 016-67845354
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                    <div>
+                      <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </n-link>
           </div>
         </div>
 
         <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 6</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a class="btn btn-primary">Book it!</a>
-            </div>
+          <div class="card" style="width: 18rem;" >
+            <n-link to='/tour-guide/6'>
+              <div>
+                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-main-content">
+                    <div class="guide-name">Yong Wen Li</div>
+                    Email: tp045014@mail.apu.edu.my<br/>
+                    Phone No: 016-67845354
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                    <div>
+                      <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </n-link>
           </div>
         </div>
         <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 7</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a class="btn btn-primary">Book it!</a>
-            </div>
+          <div class="card" style="width: 18rem;" >
+            <n-link to='/tour-guide/7'>
+              <div>
+                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-main-content">
+                    <div class="guide-name">Yong Wen Li</div>
+                    Email: tp045014@mail.apu.edu.my<br/>
+                    Phone No: 016-67845354
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                    <div>
+                      <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </n-link>
           </div>
         </div>
 
         <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Tour Guide 8</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a class="btn btn-primary">Book it!</a>
-            </div>
+          <div class="card" style="width: 18rem;" >
+            <n-link to='/tour-guide/8'>
+              <div>
+                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <div class="card-body">
+                  <div class="card-main-content">
+                    <div class="guide-name">Yong Wen Li</div>
+                    Email: tp045014@mail.apu.edu.my<br/>
+                    Phone No: 016-67845354
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <!--                <h5 class="card-title">Kuala Lumpur</h5>-->
+                    <div>
+                      <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </n-link>
           </div>
         </div>
       </div>
@@ -110,7 +214,39 @@ export default {
 
 <style scoped>
 
+  .guide-name {
+    font-size: 24px;
+  }
 
+  .card-body {
+    padding: 5px;
+  }
+
+  .card-img-top {
+    border-radius: 5px;
+  }
+
+
+  /*.guide-name {*/
+  /*  !*font-size: 14px;*!*/
+  /*  margin-top: 0px;*/
+  /*  margin-bottom: 3px;*/
+  /*  color: darkslategray;*/
+  /*}*/
+
+  .card-title {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    color: grey;
+  }
+
+  .card-title-rating {
+    font-size: 14px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    color: black;
+  }
 
   .post-box {
     margin: auto;
@@ -118,11 +254,12 @@ export default {
   }
 
   .card {
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 2px #ccc;
+    /*border: 1px solid #ccc;*/
+    /*box-shadow: 0 2px 2px #ccc;*/
     background-color: white;
     width: 90%;
     margin: auto;
+    border: 0px;
   }
 
   a {
@@ -158,9 +295,11 @@ export default {
   .posts {
     display: flex;
     padding: 20px;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
   }
+
 </style>
+

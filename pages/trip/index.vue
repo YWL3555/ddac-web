@@ -20,7 +20,7 @@
               </div>
               <div class="card-main-content">
                 <div class="content-title">Explore the beauty of Kuala Lumpur city</div>
-                <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                <div class="content-date">3 days · 5 dates available</div>
                 <p class="guide-name">Tour guide: Yong Wen Li</p>
               </div>
             </div>
@@ -42,7 +42,7 @@
                   </div>
                   <div class="card-main-content">
                     <div class="content-title">Explore the foods in Ipoh</div>
-                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                    <div class="content-date">3 days · 5 dates available</div>
                     <p class="guide-name">Tour guide: Yong Wen Li</p>
                   </div>
                 </div>
@@ -65,7 +65,7 @@
                   </div>
                   <div class="card-main-content">
                     <div class="content-title">Explore the beauty of Penang city</div>
-                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                    <div class="content-date">3 days · 5 dates available</div>
                     <p class="guide-name">Tour guide: Yong Wen Li</p>
                   </div>
                 </div>
@@ -88,7 +88,7 @@
                   </div>
                   <div class="card-main-content">
                     <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                    <div class="content-date">3 days · 5 dates available</div>
                     <p class="guide-name">Tour guide: Yong Wen Li</p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@
                   </div>
                   <div class="card-main-content">
                     <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                    <div class="content-date">3 days · 5 dates available</div>
                     <p class="guide-name">Tour guide: Yong Wen Li</p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@
                   </div>
                   <div class="card-main-content">
                     <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                    <div class="content-date">3 days · 5 dates available</div>
                     <p class="guide-name">Tour guide: Yong Wen Li</p>
                   </div>
                 </div>
@@ -156,7 +156,7 @@
                   </div>
                   <div class="card-main-content">
                     <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                    <div class="content-date">3 days · 5 dates available</div>
                     <p class="guide-name">Tour guide: Yong Wen Li</p>
                   </div>
                 </div>
@@ -179,7 +179,7 @@
                   </div>
                   <div class="card-main-content">
                     <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">2/3/2020-4/3/2020 · 3 days</div>
+                    <div class="content-date">3 days · 5 dates available</div>
                     <p class="guide-name">Tour guide: Yong Wen Li</p>
                   </div>
                 </div>
@@ -206,8 +206,14 @@ export default {
 
 <style scoped>
 
+  .content-title {
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 3px;
+  }
+
   .card-main-content {
-    min-height: 100px;
+    min-height: 110px;
   }
 
   .card-body {
