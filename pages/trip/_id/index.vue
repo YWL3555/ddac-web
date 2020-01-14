@@ -68,8 +68,18 @@ export default {
 
 <style scoped>
 
+  pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+  }
+
   .trip-content {
     max-width: 100%;
+    font-size: 15px;
   }
 
   .available {

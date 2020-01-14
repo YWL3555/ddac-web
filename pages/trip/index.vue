@@ -206,7 +206,8 @@ export default {
 
 <style scoped>
 
-  .content-date {
+  .card-main-content {
+    min-height: 100px;
   }
 
   .card-body {
