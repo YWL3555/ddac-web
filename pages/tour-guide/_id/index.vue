@@ -7,8 +7,8 @@
       <div class="col-5 basic-info">
         <div class="row justify-content-center">
           <div class="profile-pic">
-            <img src="../../../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:230px;
-  height:230px;
+            <img src="../../../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:250px;
+  height:250px;
   object-fit:cover;">
           </div>
         </div>
@@ -16,7 +16,7 @@
           <div class="col">
             <div class="profile-info">
               <div class="info-1">
-                <h5>tp045014@mail.apu.edu.my</h5>
+                <h5>jackmaluvchina@taobao.com</h5>
                 <p>★ 4.32 (43)</p>
               </div>
             </div>
@@ -24,12 +24,16 @@
         </div>
       </div>
       <div class="col-6 detail-info">
-        <h1>Hi, I'm Yong Wen Li</h1>
+        <h1>Hi, I'm Jack Ma</h1>
         <p style="padding-bottom: 5px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Velit dignissim sodales ut eu sem integer vitae. </p>
         <dt>Languages</dt>
-        <dd>Mandarin, English, Bahasa Malaysia</dd>
+        <dd>Mandarin, English</dd>
         <dt>Contact number</dt>
-        <dd>012-39509385</dd>
+        <dd>018-8888888</dd>
+        <div style="padding-top: 5px">
+        <b-button variant="danger">Book a private trip</b-button>
+        </div>
+
       </div>
       <div class="col-1"></div>
     </div>
