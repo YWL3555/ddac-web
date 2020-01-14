@@ -29,7 +29,7 @@
 
 <style scoped>
   .main {
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 </style>

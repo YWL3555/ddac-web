@@ -1,7 +1,7 @@
 <template>
   <div>
   <div id="home-img" class="view">
-    <div>
+    <div class="upper-section">
       <div class="trip-info">
         <div class="row">
           <div class="col-lg-5">
@@ -37,7 +37,7 @@
 
       </div>
     </div>
-    <section>
+    <section class="lower-section">
       <h2>What you'll do</h2>
       <pre class="trip-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Velit dignissim sodales ut eu sem integer vitae. Condimentum mattis pellentesque id nibh. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Sed euismod nisi porta lorem mollis aliquam ut. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Amet mattis vulputate enim nulla aliquet porttitor lacus. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Facilisis leo vel fringilla est. Tincidunt augue interdum velit euismod in pellentesque massa placerat duis. Urna molestie at elementum eu facilisis sed. Purus semper eget duis at tellus at urna condimentum mattis. Egestas purus viverra accumsan in nisl nisi scelerisque. Eu ultrices vitae auctor eu. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
@@ -76,11 +76,12 @@ export default {
     white-space: -pre-wrap;
     white-space: -o-pre-wrap;
     word-wrap: break-word;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
   }
 
   .trip-content {
     max-width: 100%;
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .available {
@@ -89,6 +90,9 @@ export default {
     margin-left: 8px;
   }
 
+  .lower-section {
+    padding: 20px 30px;
+  }
 
   .post-box {
     margin: auto;
@@ -158,5 +162,15 @@ export default {
     align-items: center;
     justify-content: center;
   }
+
+  .upper-section {
+    background-color: #262729;
+    padding: auto;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 80px;
+    color: white;
+  }
+
 </style>
 

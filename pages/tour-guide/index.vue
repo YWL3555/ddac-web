@@ -10,7 +10,7 @@
       <div class="card" style="width: 18rem;" >
         <n-link to='/tour-guide/1'>
           <div>
-            <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+            <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
             <div class="card-body">
               <div class="card-main-content">
                 <div class="guide-name">Yong Wen Li</div>
@@ -33,7 +33,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/tour-guide/2'>
               <div>
-                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="card-main-content">
                     <div class="guide-name">Yong Wen Li</div>
@@ -57,7 +57,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/tour-guide/3'>
               <div>
-                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="card-main-content">
                     <div class="guide-name">Yong Wen Li</div>
@@ -81,7 +81,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/tour-guide/4'>
               <div>
-                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="card-main-content">
                     <div class="guide-name">Yong Wen Li</div>
@@ -105,7 +105,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/tour-guide/5'>
               <div>
-                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="card-main-content">
                     <div class="guide-name">Yong Wen Li</div>
@@ -129,7 +129,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/tour-guide/6'>
               <div>
-                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="card-main-content">
                     <div class="guide-name">Yong Wen Li</div>
@@ -152,7 +152,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/tour-guide/7'>
               <div>
-                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="card-main-content">
                     <div class="guide-name">Yong Wen Li</div>
@@ -176,7 +176,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/tour-guide/8'>
               <div>
-                <img class="card-img-top" src="../../assets/img/profilepic.gif" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/profilepic.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="card-main-content">
                     <div class="guide-name">Yong Wen Li</div>
@@ -299,6 +299,10 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+
+  .view {
+    padding: 10px 20px;
   }
 
 </style>

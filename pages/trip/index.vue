@@ -302,5 +302,8 @@ export default {
     justify-content: center;
   }
 
+  .view {
+    padding: 10px 20px;
+  }
 </style>
 

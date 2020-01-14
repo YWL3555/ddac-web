@@ -7,7 +7,7 @@
     <div class="trip-info">
       <div class="row justify-content-center">
         <div class="profile-pic">
-          <img src="../assets/img/profilepic.gif" class="rounded img-fluid" >
+          <img src="../assets/img/profilepic.jpg" class="rounded img-fluid" >
         </div>
       </div>
       <div class="row">

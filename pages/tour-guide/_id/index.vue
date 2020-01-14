@@ -1,23 +1,39 @@
 <template>
   <div>
+    <div id="header">
+    </div>
   <div id="home-img" class="view">
-    <div class="tour-guide-info">
-      <div class="row justify-content-center">
-        <div class="profile-pic">
-          <img src="../../../assets/img/profilepic.gif" class="rounded img-fluid" >
+    <div class="row tour-guide-info">
+      <div class="col-5 basic-info">
+        <div class="row justify-content-center">
+          <div class="profile-pic">
+            <img src="../../../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:230px;
+  height:230px;
+  object-fit:cover;">
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="profile-info">
-            <div class="info-1">
-              <h2>Yong Wen Li</h2>
-              <h4>Kuala Lumpur, Malaysia</h4>
-              <p>★ 4.32 (43)</p>
+        <div class="row">
+          <div class="col">
+            <div class="profile-info">
+              <div class="info-1">
+                <h5>tp045014@mail.apu.edu.my</h5>
+                <p>★ 4.32 (43)</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="col-6 detail-info">
+        <h1>Hi, I'm Yong Wen Li</h1>
+        <p style="padding-bottom: 5px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Velit dignissim sodales ut eu sem integer vitae. </p>
+        <dt>Languages</dt>
+        <dd>Mandarin, English, Bahasa Malaysia</dd>
+        <dt>Contact number</dt>
+        <dd>012-39509385</dd>
+      </div>
+      <div class="col-1"></div>
+    </div>
+
       <section class="posts">
         <div class="row">
           <div class="col-sm-3 post-box">
@@ -205,7 +221,7 @@
 
       </section>
 
-    </div>
+
   </div>
   </div>
 </template>
@@ -222,6 +238,9 @@ export default {
 
 <style scoped>
 
+  detail-info {
+  }
+
   .tour-guide-info {
     padding-top: 30px;
   }
@@ -233,6 +252,11 @@ export default {
   .profile-info{
     text-align: center;
   }
+
+  .basic-info {
+    width: 20%;
+  }
+
   .content-title {
     font-weight: bold;
     font-size: 18px;
@@ -328,6 +352,20 @@ export default {
     align-items: center;
     justify-content: center;
   }
+
+  .view {
+    position: absolute;
+    z-index: 2;
+    padding: 10px 20px;
+  }
+
+  #header{
+    width: 100%;
+    height: 370px;
+    position: absolute;
+    z-index: 1;
+  }
+
 
 </style>
 
