@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="pic">
-              <img src="../../../assets/img/post1.jpg" class="rounded img-fluid" >
+              <img src="../../assets/img/post1.jpg" class="rounded img-fluid" >
             </div>
           </div>
           <div class="col-lg-7">
@@ -28,7 +28,7 @@
                 <dd>English</dd>
               </div>
               <div style="margin-top: 10px">
-                <b-button variant="danger" style="display:inline;">Show dates</b-button>
+                <b-button variant="danger" style="display:inline;" to="/trip/1/dates" >Show dates</b-button>
                 <h6 class="available" style="display:inline;">3 dates available</h6>
               </div>
             </div>
@@ -47,6 +47,7 @@
         Id semper risus in hendrerit gravida. Duis at consectetur lorem donec massa sapien faucibus. Arcu felis bibendum ut tristique et egestas quis. Massa tempor nec feugiat nisl pretium. Morbi tincidunt augue interdum velit euismod in pellentesque. Non diam phasellus vestibulum lorem sed. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Maecenas sed enim ut sem viverra aliquet eget sit amet. Turpis cursus in hac habitasse. Mi proin sed libero enim sed faucibus turpis in eu. Bibendum at varius vel pharetra. Varius duis at consectetur lorem donec massa sapien faucibus. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. At tellus at urna condimentum mattis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Enim facilisis gravida neque convallis a cras semper. Tempus egestas sed sed risus. Sed felis eget velit aliquet sagittis id consectetur.
       </pre>
     </section>
+    <nuxt-child/>
   </div>
   </div>
 </template>

@@ -227,6 +227,7 @@
 
 
   </div>
+    <nuxt-child/>
   </div>
 </template>
 
@@ -247,6 +248,7 @@ export default {
 
   .tour-guide-info {
     padding-top: 30px;
+    /*color: white;*/
   }
 
   .profile-pic {
@@ -368,6 +370,7 @@ export default {
     height: 370px;
     position: absolute;
     z-index: 1;
+    /*background-color: #262729;*/
   }
 
 
