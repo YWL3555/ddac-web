@@ -1,213 +1,43 @@
 <template>
   <div>
   <div id="home-img" class="view">
-    <div>
-      <h1>My Profile</h1>
-    </div>
-    <div class="trip-info">
-      <div class="row justify-content-center">
-        <div class="profile-pic">
-          <img src="../assets/img/profilepic.jpg" class="rounded img-fluid" >
-        </div>
-      </div>
-      <div class="row">
-        <div class="col">
-          <div class="profile-info">
-            <div class="info-1">
-              <h2>Yong Wen Li</h2>
-              <h4>Kuala Lumpur, Malaysia</h4>
-              <p>★ 4.32 (43)</p>
-            </div>
+    <div class="row tour-guide-info">
+      <div class="col-5 basic-info">
+        <div class="row justify-content-center">
+          <div class="profile-pic">
+            <img src="../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:250px;
+  height:250px;
+  object-fit:cover;">
           </div>
         </div>
-      </div>
-      <section class="posts">
         <div class="row">
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/1'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post1.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Kuala Lumpur</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 4.32 (43)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the beauty of Kuala Lumpur city</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
-          </div>
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/2'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post2.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Ipoh</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 4.22 (13)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the foods in Ipoh</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
-          </div>
-
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/3'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post3.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Penang</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the beauty of Penang city</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
-          </div>
-
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/4'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post4.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Langkawi</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 3.32 (26)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
-          </div>
-
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/5'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post5.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Langkawi</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 3.32 (26)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
-          </div>
-
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/6'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post1.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Langkawi</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 3.32 (26)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
-          </div>
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/7'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post2.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Langkawi</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 3.32 (26)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
-          </div>
-
-          <div class="col-sm-3 post-box">
-            <div class="card" style="width: 18rem;" >
-              <n-link to='/trip/8'>
-                <div>
-                  <img class="card-img-top" src="../assets/img/post3.jpg" alt="Card image cap">
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <h5 class="card-title">Langkawi</h5>
-                      <div>
-                        <h5 class="card-title-rating">★ 3.32 (26)</h5>
-                      </div>
-                    </div>
-                    <div class="card-main-content">
-                      <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                      <div class="content-date">3 days · 5 dates available</div>
-                      <p class="guide-name">Tour guide: Yong Wen Li</p>
-                    </div>
-                  </div>
-                </div>
-              </n-link>
-            </div>
+          <div class="col" align="center" >
+            <b-button variant="outline-dark">Upload new profile picture</b-button>
           </div>
         </div>
+      </div>
+      <div class="col-6 detail-info">
+        <div class="row">
+          <div class="col">
+            <h1 style="padding-bottom: 10px;">My profile</h1>
+          </div>
+          <div class="col" align="end">
+            <b-button variant="outline-dark">Edit Profile</b-button>
+          </div>
+        </div>
+        <dt>Name</dt>
+        <dd>Yong Wen Li</dd>
+        <dt>Gender</dt>
+        <dd>Male</dd>
+        <dt>TP number</dt>
+        <dd>TP045014</dd>
+        <dt>Email address</dt>
+        <dd>tp045014@mail.apu.edu.my</dd>
+        <dt>Contact number</dt>
+        <dd>018-8888888</dd>
 
-      </section>
-
+      </div>
+      <div class="col-1"></div>
     </div>
   </div>
   </div>
@@ -225,8 +55,14 @@ export default {
 
 <style scoped>
 
+  .title {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
   .profile-pic {
     padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   .profile-info{
@@ -326,6 +162,11 @@ export default {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+  }
+
+  .view {
+    padding-top: 30px;
+    min-height: 630px;
   }
 
 </style>
