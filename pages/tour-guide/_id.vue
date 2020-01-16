@@ -7,7 +7,7 @@
       <div class="col-5 basic-info">
         <div class="row justify-content-center">
           <div class="profile-pic">
-            <img src="../../../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:250px;
+            <img src="../../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:250px;
   height:250px;
   object-fit:cover;">
           </div>
@@ -31,7 +31,7 @@
         <dt>Contact number</dt>
         <dd>018-8888888</dd>
         <div style="padding-top: 5px">
-        <b-button variant="danger">Book a private trip</b-button>
+        <b-button variant="danger" :to="`/tour-guide/${this.$route.params.id}/book`">Book a private trip</b-button>
         </div>
 
       </div>
@@ -44,7 +44,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/1'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post1.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Kuala Lumpur</h5>
@@ -66,7 +66,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/2'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post2.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Ipoh</h5>
@@ -89,7 +89,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/3'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post3.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Penang</h5>
@@ -112,7 +112,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/4'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post4.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post4.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Langkawi</h5>
@@ -135,7 +135,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/5'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post5.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post5.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Langkawi</h5>
@@ -158,7 +158,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/6'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post1.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Langkawi</h5>
@@ -180,7 +180,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/7'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post2.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Langkawi</h5>
@@ -203,7 +203,7 @@
             <div class="card" style="width: 18rem;" >
               <n-link to='/trip/8'>
                 <div>
-                  <img class="card-img-top" src="../../../assets/img/post3.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                   <div class="card-body">
                     <div class="d-flex justify-content-between">
                       <h5 class="card-title">Langkawi</h5>
