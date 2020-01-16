@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="pic">
-              <img src="../../assets/img/post1.jpg" class="rounded img-fluid" >
+              <img src="../../assets/img/post2.jpg" class="rounded img-fluid" >
             </div>
           </div>
           <div class="col-lg-7">
@@ -27,8 +27,8 @@
                 <dt>Hosted in</dt>
                 <dd>English</dd>
               </div>
-              <div style="margin-top: 10px">
-                <b-button variant="danger" style="display:inline;" to="/trip/1/dates" >Show dates</b-button>
+              <div style="margin-top: 15px; color: white">
+                <b-button variant="danger" style="display:inline;" :to="`/trip/${this.$route.params.id}/dates`" >Show dates</b-button>
                 <h6 class="available" style="display:inline;">3 dates available</h6>
               </div>
             </div>
