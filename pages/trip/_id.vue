@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="pic">
-              <img src="../../assets/img/post2.jpg" class="rounded img-fluid" >
+              <img src="../../assets/img/post2.jpg" class="rounded img-fluid trip-pic" >
             </div>
           </div>
           <div class="col-lg-7">
@@ -47,6 +47,56 @@
         Id semper risus in hendrerit gravida. Duis at consectetur lorem donec massa sapien faucibus. Arcu felis bibendum ut tristique et egestas quis. Massa tempor nec feugiat nisl pretium. Morbi tincidunt augue interdum velit euismod in pellentesque. Non diam phasellus vestibulum lorem sed. Amet venenatis urna cursus eget nunc scelerisque viverra mauris in. Maecenas sed enim ut sem viverra aliquet eget sit amet. Turpis cursus in hac habitasse. Mi proin sed libero enim sed faucibus turpis in eu. Bibendum at varius vel pharetra. Varius duis at consectetur lorem donec massa sapien faucibus. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. At tellus at urna condimentum mattis. Aliquam vestibulum morbi blandit cursus risus at ultrices mi tempus. Enim facilisis gravida neque convallis a cras semper. Tempus egestas sed sed risus. Sed felis eget velit aliquet sagittis id consectetur.
       </pre>
     </section>
+    <section class="comment-section">
+      <hr/>
+      <h2>Comment section</h2>
+      <div class="container">
+        <div class="card">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-2">
+                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                <p class="text-secondary text-center">15 Minutes Ago</p>
+              </div>
+              <div class="col-md-10">
+                <p>
+                  <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a>
+                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
+
+                </p>
+                <div class="clearfix"></div>
+                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <p>
+                  <a class="float-right btn btn-outline-primary ml-2"> <i class="fa fa-reply"></i> Reply</a>
+                  <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
+                </p>
+              </div>
+            </div>
+            <div class="card card-inner">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
+                    <p class="text-secondary text-center">15 Minutes Ago</p>
+                  </div>
+                  <div class="col-md-10">
+                    <p><a href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Maniruzzaman Akash</strong></a></p>
+                    <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p>
+                      <a class="float-right btn btn-outline-primary ml-2">  <i class="fa fa-reply"></i> Reply</a>
+                      <a class="float-right btn text-white btn-danger"> <i class="fa fa-heart"></i> Like</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <nuxt-child/>
   </div>
   </div>
@@ -70,6 +120,14 @@ export default {
 
 <style scoped>
 
+  .card-inner{
+    margin-left: 4rem;
+  }
+
+  .comment-section {
+    padding: 0px 30px 20px;
+  }
+
   pre {
     overflow-x: auto;
     white-space: pre-wrap;
@@ -92,7 +150,7 @@ export default {
   }
 
   .lower-section {
-    padding: 20px 30px;
+    padding: 20px 30px 0px;
   }
 
   .post-box {
@@ -100,26 +158,14 @@ export default {
     margin-bottom: 20px;
   }
 
-  .card {
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 2px #ccc;
-    background-color: white;
-    width: 90%;
-    margin: auto;
-  }
+
 
   a {
     text-decoration: none;
     color: black;
   }
 
-  @media (min-width: 850px) {
-    .card {
-      width: 400px;
-      margin: auto;
 
-    }
-  }
 
   .post-thumbnail {
     width: 100%;
@@ -153,10 +199,14 @@ export default {
     margin-top: 30px;
   }
 
-  .img-fluid {
+  .trip-pic {
     min-width: 100%;
     min-height: 400px;
     margin: auto;
+  }
+
+  .img-fluid {
+
   }
   .pic {
     position: center;
