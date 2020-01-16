@@ -1,7 +1,5 @@
 <template>
   <div>
-    <div id="header">
-    </div>
   <div id="home-img" class="view">
     <div class="row tour-guide-info">
       <div class="col-5 basic-info">
@@ -222,12 +220,11 @@
             </div>
           </div>
         </div>
-
+        <nuxt-child/>
       </section>
 
 
   </div>
-    <nuxt-child/>
   </div>
 </template>
 
@@ -243,8 +240,6 @@ export default {
 
 <style scoped>
 
-  detail-info {
-  }
 
   .tour-guide-info {
     padding-top: 30px;
@@ -360,18 +355,9 @@ export default {
   }
 
   .view {
-    position: absolute;
-    z-index: 2;
     padding: 10px 20px;
   }
 
-  #header{
-    width: 100%;
-    height: 370px;
-    position: absolute;
-    z-index: 1;
-    /*background-color: #262729;*/
-  }
 
 
 </style>
