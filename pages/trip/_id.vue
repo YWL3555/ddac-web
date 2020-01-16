@@ -68,6 +68,7 @@
 
                 </p>
                 <div class="clearfix"></div>
+                <div style="padding: 7px 0px 7px">★ ★ ★ ★ ★</div>
                 <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                 <p>
                   <a class="float-right btn btn-outline-primary ml-2"> <i class="fa fa-reply"></i> Reply</a>
