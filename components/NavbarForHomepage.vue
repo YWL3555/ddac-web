@@ -18,7 +18,7 @@
 
         <b-nav-item-dropdown text="TP012345" right>
           <b-dropdown-item to="/profile">Profile</b-dropdown-item>
-          <b-dropdown-item href="#">My trips</b-dropdown-item>
+          <b-dropdown-item href="/my-trips">My trips</b-dropdown-item>
           <b-dropdown-item href="#">Sign Out</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
