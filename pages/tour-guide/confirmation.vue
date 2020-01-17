@@ -120,6 +120,7 @@ export default {
 
   .view {
     padding: 10px 20px;
+    min-height: 630px;
   }
 </style>
 
