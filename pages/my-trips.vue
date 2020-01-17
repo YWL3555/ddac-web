@@ -21,7 +21,7 @@
                   <dd>5</dd>
                 </div>
                 <div>
-                  <b-button variant="outline-danger">Cancel trip</b-button>
+                  <b-button variant="outline-danger" to="/my-trips/3/cancel">Cancel trip</b-button>
                 </div>
 
               </div>
@@ -42,7 +42,7 @@
                   <dd>5</dd>
                 </div>
                 <div>
-                  <b-button variant="outline-danger">Cancel trip</b-button>
+                  <b-button variant="outline-danger" to="/my-trips/3/cancel">Cancel trip</b-button>
                 </div>
 
               </div>
@@ -63,7 +63,7 @@
                   <dd>5</dd>
                 </div>
                 <div>
-                  <b-button variant="outline-primary">Add rating and comment</b-button>
+                  <b-button variant="outline-primary" to="/my-trips/1/review">Give review</b-button>
                 </div>
 
               </div>
@@ -73,6 +73,7 @@
       </div>
     </section>
   </div>
+    <nuxt-child/>
   </div>
 </template>
 

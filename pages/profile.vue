@@ -22,7 +22,7 @@
             <h1 style="padding-bottom: 10px;">My profile</h1>
           </div>
           <div class="col" align="end">
-            <b-button variant="outline-dark">Edit Profile</b-button>
+            <b-button variant="outline-dark" to="/profile/edit">Edit Profile</b-button>
           </div>
         </div>
         <dt>Name</dt>
@@ -40,6 +40,7 @@
       <div class="col-1"></div>
     </div>
   </div>
+    <nuxt-child/>
   </div>
 </template>
 
