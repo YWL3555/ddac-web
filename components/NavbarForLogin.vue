@@ -12,14 +12,10 @@
 
       <b-navbar-nav class="ml-auto">
 
-        <b-navbar-nav>
-          <b-nav-item to="/tour-guide">Tour guides</b-nav-item>
-          <b-nav-item to="/trip">Trips</b-nav-item>
-        </b-navbar-nav>
-        <b-nav-item-dropdown text="TP012345" right>
-          <b-dropdown-item to="/profile">Profile</b-dropdown-item>
-          <b-dropdown-item href="/my-trips">My trips</b-dropdown-item>
-          <b-dropdown-item href="/login">Sign out</b-dropdown-item>
+        <b-nav-item-dropdown text="Login as" right>
+          <b-dropdown-item to="/login">Student</b-dropdown-item>
+          <b-dropdown-item to="/login/admin">Administrator</b-dropdown-item>
+          <b-dropdown-item to="/login/tour-guide">Tour guide</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
