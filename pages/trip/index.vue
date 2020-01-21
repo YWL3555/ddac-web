@@ -3,6 +3,9 @@
   <div id="home-img" class="view">
     <div>
       <h1>Trips</h1>
+      <div>
+        All | City Tour | Suburb Experience | Island Hopping | Cultural Experience | Food Trip
+      </div>
     </div>
     <section class="posts">
       <div class="row">
