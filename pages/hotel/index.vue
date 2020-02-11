@@ -2,7 +2,7 @@
   <div>
   <div id="home-img" class="view">
     <div>
-      <h1>Trips</h1>
+      <h1>Hotels</h1>
       <div>
         All | City Tour | Suburb Experience | Island Hopping | Cultural Experience | Food Trip
       </div>
@@ -11,7 +11,7 @@
       <div class="row">
         <div class="col-sm-3 post-box">
       <div class="card" style="width: 18rem;" >
-        <n-link to='/trip/1'>
+        <n-link to='/hotel/1'>
           <div>
             <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
             <div class="card-body">
@@ -33,7 +33,7 @@
         </div>
         <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/trip/2'>
+            <n-link to='/hotel/2'>
               <div>
                 <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -56,7 +56,7 @@
 
         <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/trip/3'>
+            <n-link to='/hotel/3'>
               <div>
                 <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -79,7 +79,7 @@
 
         <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/trip/4'>
+            <n-link to='/hotel/4'>
               <div>
                 <img class="card-img-top" src="../../assets/img/post4.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -102,7 +102,7 @@
 
         <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/trip/5'>
+            <n-link to='/hotel/5'>
               <div>
                 <img class="card-img-top" src="../../assets/img/post5.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -125,7 +125,7 @@
 
         <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/trip/6'>
+            <n-link to='/hotel/6'>
               <div>
                 <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -147,7 +147,7 @@
         </div>
         <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/trip/7'>
+            <n-link to='/hotel/7'>
               <div>
                 <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                 <div class="card-body">
@@ -170,7 +170,7 @@
 
         <div class="col-sm-3 post-box">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/trip/8'>
+            <n-link to='/hotel/8'>
               <div>
                 <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                 <div class="card-body">

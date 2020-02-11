@@ -16,7 +16,7 @@
           <b-navbar-nav class="ml-auto" v-if="LoggedIn">
 
             <b-navbar-nav>
-              <b-nav-item to="/trip">Hotels</b-nav-item>
+              <b-nav-item to="/hotel">Hotels</b-nav-item>
             </b-navbar-nav>
             <b-nav-item-dropdown text="Yong Wen Li" right>
               <b-dropdown-item to="/profile">Profile</b-dropdown-item>
@@ -28,7 +28,7 @@
           <b-navbar-nav class="ml-auto" v-else >
 
             <b-navbar-nav>
-              <b-nav-item to="/trip">Hotels</b-nav-item>
+              <b-nav-item to="/hotel">Hotels</b-nav-item>
               <b-nav-item to="/trip">Login</b-nav-item>
             </b-navbar-nav>
           </b-navbar-nav>

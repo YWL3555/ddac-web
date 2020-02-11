@@ -4,7 +4,7 @@
     <div>
       <h1>Confirmation</h1>
       <p>Your booking is confirmed</p>
-      <n-link to="/trip">Click here back to trips page</n-link>
+      <n-link to="/hotel">Click here back to trips page</n-link>
     </div>
   </div>
   </div>

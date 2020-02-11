@@ -28,7 +28,7 @@
                 <dd>English</dd>
               </div>
               <div style="margin-top: 15px; color: white">
-                <b-button variant="danger" style="display:inline;" :to="`/trip/${this.$route.params.id}/book`" >Show dates</b-button>
+                <b-button variant="danger" style="display:inline;" :to="`/hotel/${this.$route.params.id}/book`" >Show dates</b-button>
                 <h6 class="available" style="display:inline;">3 dates available</h6>
               </div>
             </div>

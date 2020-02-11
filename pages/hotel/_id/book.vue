@@ -5,7 +5,7 @@
     @hidden="closeModal"
     @ok="onOkClick"
   >
-    <h2>Trip availability</h2>
+    <h2>Hotel availability</h2>
     <p>Select dates for your trip</p>
     <div>
       <label for="trip-guests">Guests</label>
@@ -22,10 +22,10 @@
   export default {
     methods: {
       closeModal () {
-        this.$router.push(`/trip/${this.$route.params.id}`)
+        this.$router.push(`/hotel/${this.$route.params.id}`)
       },
       onOkClick () {
-        this.$router.push(`/trip/confirmation`)
+        this.$router.push(`/hotel/confirmation`)
       }
     },
     data () {
