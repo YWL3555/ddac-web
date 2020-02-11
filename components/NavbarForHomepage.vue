@@ -1,7 +1,7 @@
 <template>
   <div>
   <b-navbar toggleable="lg" type="dark" class="navbar-inner">
-    <b-navbar-brand to="/">APU Tour Guide Booking System</b-navbar-brand>
+    <b-navbar-brand to="/">iHotel</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 

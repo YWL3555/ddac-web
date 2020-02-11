@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-lg-5 text-left">
             <div class="card card-search">
-              <h3>Explore Malaysia and meet new friends in campus.</h3>
+              <h3>Find and book your ideal place in Malaysia to stay!</h3>
               <form>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Where</label>
