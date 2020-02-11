@@ -3,7 +3,7 @@ import pkg from './package'
 export default {
   mode: 'spa',
   server: {
-    port: 3030, // default: 3000
+    port: 5050, // default: 3000
   },
   /*
   ** Headers of the page
