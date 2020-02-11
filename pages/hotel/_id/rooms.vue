@@ -1,11 +1,12 @@
 <template>
   <b-modal
     :visible="true"
-    ok-only size="xl"
+    size="xl"
+    hide-footer
+    hide-header
     @hidden="closeModal"
     @ok="onOkClick"
   >
-    <h2>Rooms</h2>
     <div>
       <div>
         <b-carousel
@@ -34,17 +35,17 @@
 <!--          </b-carousel-slide>-->
 
           <!-- Slides with image only -->
-          <b-carousel-slide img-src="../../../assets/img/room1.jpg">
-            <h3>Double Room</h3>
-            <h4>RM250 | For maximum 2 pax</h4>
-          </b-carousel-slide>
           <b-carousel-slide img-src="../../../assets/img/room2.jpg">
             <h3>Double Room</h3>
             <h4>RM250 | For maximum 2 pax</h4>
           </b-carousel-slide>
           <b-carousel-slide img-src="../../../assets/img/room3.jpg">
             <h3>Double Room</h3>
-            <h4>RM250 | For maximum 2 pax</h4>
+            <h4>RM350 | For maximum 2 pax</h4>
+          </b-carousel-slide>
+          <b-carousel-slide img-src="../../../assets/img/room4.jpg">
+            <h3>Double Room</h3>
+            <h4>RM450 | For maximum 4 pax</h4>
           </b-carousel-slide>
 
           <!-- Slides with img slot -->
@@ -102,7 +103,14 @@
 </script>
 
 <style scoped>
-  .pic {
-    width: 900px;
+  .modal-dialog {
+    max-width: 100%;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    display: flex;
   }
 </style>
