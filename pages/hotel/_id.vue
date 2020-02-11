@@ -12,24 +12,23 @@
           <div class="col-lg-7">
             <div class="info">
               <div class="info-1">
-                <h2 >Experience the beauty of Kuala Lumpur</h2>
+                <h2>Hotel Istana Kuala Lumpur</h2>
                 <h4>Kuala Lumpur, Malaysia</h4>
                 <p>★ 4.32 (43)</p>
               </div>
               <div class="info-2">
-                <dt>Duration</dt>
-                <dd>3 days</dd>
-<!--                <dd>2/3/2020 - 4/3/2020 · 3 days</dd>-->
-                <dt>Group Size</dt>
-                <dd>Up to 8 peoples</dd>
-                <dt>Tour Guide</dt>
-                <dd>Yong Wen Li</dd>
-                <dt>Hosted in</dt>
-                <dd>English</dd>
+                <dt>Address</dt>
+                <dd>73, Jalan Raja Chulan, Bukit Bintang, 50200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</dd>
+                <dt>Contact Number</dt>
+                <dd>03-2141 9988</dd>
+                <dt>Facilities</dt>
+                <dd>WiFi | Free Parking | Restaurant | 24-Hour Front Desk</dd>
+                <dt>Room Types</dt>
+                <dd><nuxt-link style="color: white" :to="`/hotel/${this.$route.params.id}/rooms`" >3 Room Types · CLick Here to View</nuxt-link></dd>
               </div>
               <div style="margin-top: 15px; color: white">
-                <b-button variant="danger" style="display:inline;" :to="`/hotel/${this.$route.params.id}/book`" >Show dates</b-button>
-                <h6 class="available" style="display:inline;">3 dates available</h6>
+                <b-button variant="danger" style="display:inline;" :to="`/hotel/${this.$route.params.id}/book`" >Book now!</b-button>
+                <h6 class="available" style="display:inline;">From RM250 / night</h6>
               </div>
             </div>
           </div>
@@ -38,7 +37,7 @@
       </div>
     </div>
     <section class="lower-section">
-      <h2>What you'll do</h2>
+      <h2>Hotel Description</h2>
       <pre class="trip-content">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo ullamcorper a lacus vestibulum sed. Velit dignissim sodales ut eu sem integer vitae. Condimentum mattis pellentesque id nibh. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Sed euismod nisi porta lorem mollis aliquam ut. Pulvinar sapien et ligula ullamcorper malesuada proin libero nunc. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Amet mattis vulputate enim nulla aliquet porttitor lacus. Laoreet non curabitur gravida arcu ac tortor dignissim convallis. Facilisis leo vel fringilla est. Tincidunt augue interdum velit euismod in pellentesque massa placerat duis. Urna molestie at elementum eu facilisis sed. Purus semper eget duis at tellus at urna condimentum mattis. Egestas purus viverra accumsan in nisl nisi scelerisque. Eu ultrices vitae auctor eu. Est pellentesque elit ullamcorper dignissim cras tincidunt lobortis feugiat vivamus.
 

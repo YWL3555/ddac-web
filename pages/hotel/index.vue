@@ -18,13 +18,12 @@
               <div class="d-flex justify-content-between">
                 <h5 class="card-title">Kuala Lumpur</h5>
                 <div>
-                  <h5 class="card-title-rating">★ 4.32 (43)</h5>
+                  <h5 class="card-title-rating">★ 4.54 (7)</h5>
                 </div>
               </div>
               <div class="card-main-content">
-                <div class="content-title">Explore the beauty of Kuala Lumpur city</div>
-                <div class="content-date">3 days · 5 dates available</div>
-                <p class="guide-name">Tour guide: Yong Wen Li</p>
+                <div class="content-title">Hotel Istana Kuala Lumpur</div>
+                <div class="content-date">RM650 / night</div>
               </div>
             </div>
           </div>
@@ -38,15 +37,14 @@
                 <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Ipoh</h5>
+                    <h5 class="card-title">Kuala Lumpur</h5>
                     <div>
-                      <h5 class="card-title-rating">★ 4.22 (13)</h5>
+                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Explore the foods in Ipoh</div>
-                    <div class="content-date">3 days · 5 dates available</div>
-                    <p class="guide-name">Tour guide: Yong Wen Li</p>
+                    <div class="content-title">Element Hotel</div>
+                    <div class="content-date">RM650 / night</div>
                   </div>
                 </div>
               </div>
@@ -61,15 +59,14 @@
                 <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Penang</h5>
+                    <h5 class="card-title">Kuala Lumpur</h5>
                     <div>
                       <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Explore the beauty of Penang city</div>
-                    <div class="content-date">3 days · 5 dates available</div>
-                    <p class="guide-name">Tour guide: Yong Wen Li</p>
+                    <div class="content-title">The Penthouse KLCC</div>
+                    <div class="content-date">RM650 / night</div>
                   </div>
                 </div>
               </div>
@@ -84,15 +81,14 @@
                 <img class="card-img-top" src="../../assets/img/post4.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Langkawi</h5>
+                    <h5 class="card-title">Kuala Lumpur</h5>
                     <div>
-                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">3 days · 5 dates available</div>
-                    <p class="guide-name">Tour guide: Yong Wen Li</p>
+                    <div class="content-title">The Penthouse KLCC</div>
+                    <div class="content-date">RM650 / night</div>
                   </div>
                 </div>
               </div>
@@ -107,15 +103,14 @@
                 <img class="card-img-top" src="../../assets/img/post5.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Langkawi</h5>
+                    <h5 class="card-title">Kuala Lumpur</h5>
                     <div>
-                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">3 days · 5 dates available</div>
-                    <p class="guide-name">Tour guide: Yong Wen Li</p>
+                    <div class="content-title">The Penthouse KLCC</div>
+                    <div class="content-date">RM650 / night</div>
                   </div>
                 </div>
               </div>
@@ -130,15 +125,14 @@
                 <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Langkawi</h5>
+                    <h5 class="card-title">Kuala Lumpur</h5>
                     <div>
-                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">3 days · 5 dates available</div>
-                    <p class="guide-name">Tour guide: Yong Wen Li</p>
+                    <div class="content-title">The Penthouse KLCC</div>
+                    <div class="content-date">RM650 / night</div>
                   </div>
                 </div>
               </div>
@@ -152,15 +146,14 @@
                 <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Langkawi</h5>
+                    <h5 class="card-title">Kuala Lumpur</h5>
                     <div>
-                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">3 days · 5 dates available</div>
-                    <p class="guide-name">Tour guide: Yong Wen Li</p>
+                    <div class="content-title">The Penthouse KLCC</div>
+                    <div class="content-date">RM650 / night</div>
                   </div>
                 </div>
               </div>
@@ -175,15 +168,14 @@
                 <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Langkawi</h5>
+                    <h5 class="card-title">Kuala Lumpur</h5>
                     <div>
-                      <h5 class="card-title-rating">★ 3.32 (26)</h5>
+                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Explore the beauty of Langkawi beaches</div>
-                    <div class="content-date">3 days · 5 dates available</div>
-                    <p class="guide-name">Tour guide: Yong Wen Li</p>
+                    <div class="content-title">The Penthouse KLCC</div>
+                    <div class="content-date">RM650 / night</div>
                   </div>
                 </div>
               </div>
@@ -216,7 +208,7 @@ export default {
   }
 
   .card-main-content {
-    min-height: 110px;
+    min-height: 60px;
   }
 
   .card-body {
