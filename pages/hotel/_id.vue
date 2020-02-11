@@ -6,7 +6,7 @@
         <div class="row">
           <div class="col-lg-5">
             <div class="pic">
-              <img src="../../assets/img/post2.jpg" class="rounded img-fluid trip-pic" >
+              <img src="../../assets/img/hotel1.jpg" class="rounded img-fluid trip-pic" >
             </div>
           </div>
           <div class="col-lg-7">
