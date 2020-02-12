@@ -2,7 +2,7 @@
   <div>
   <div id="home-img" class="view">
     <section class="trip-section">
-      <h2 style="padding-left: 60px; padding-bottom: 20px;">Trips crud here</h2>
+      <h2 style="padding-left: 60px; padding-bottom: 20px;">Private booking crud here</h2>
     </section>
   </div>
     <nuxt-child/>
@@ -16,7 +16,7 @@ export default {
   components: {
     Logo,
   },
-  layout: "tour-guide"
+  layout: "hotel-partner"
 }
 </script>
 

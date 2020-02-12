@@ -27,10 +27,6 @@
         </div>
         <dt>Name</dt>
         <dd>Yong Wen Li</dd>
-        <dt>Gender</dt>
-        <dd>Male</dd>
-        <dt>TP number</dt>
-        <dd>TP045014</dd>
         <dt>Email address</dt>
         <dd>tp045014@mail.apu.edu.my</dd>
         <dt>Contact number</dt>

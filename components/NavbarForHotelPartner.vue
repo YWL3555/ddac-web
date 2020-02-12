@@ -1,7 +1,7 @@
 <template>
   <div>
   <b-navbar toggleable="lg" type="light" variant="white" class="nav">
-    <b-navbar-brand to="">APU Tour Guide Booking System</b-navbar-brand>
+    <b-navbar-brand to="">iHotel</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -16,13 +16,14 @@
       <b-navbar-nav class="ml-auto">
 
         <b-navbar-nav>
-          <b-nav-item to="/guide/trips">My trips</b-nav-item>
-          <b-nav-item to="/guide/private-booking">Private booking</b-nav-item>
+          <b-nav-item to="/hotel-partner/trips">Room types</b-nav-item>
+          <b-nav-item to="/hotel-partner/private-booking">Bookings</b-nav-item>
+          <b-nav-item to="/hotel-partner/private-booking">Ratings and reviews</b-nav-item>
         </b-navbar-nav>
 
-        <b-nav-item-dropdown text="Tour Guide" right>
-          <b-dropdown-item to="/guide/profile">Profile</b-dropdown-item>
-          <b-dropdown-item to="/login/tour-guide">Sign Out</b-dropdown-item>
+        <b-nav-item-dropdown text="iHotel Partner" right>
+          <b-dropdown-item to="/hotel-partner/profile">Hotel information</b-dropdown-item>
+          <b-dropdown-item to="/login">Sign Out</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>

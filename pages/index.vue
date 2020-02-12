@@ -29,7 +29,7 @@
 
             <b-navbar-nav>
               <b-nav-item to="/hotel">Hotels</b-nav-item>
-              <b-nav-item to="/trip">Login</b-nav-item>
+              <b-nav-item to="/login">Login</b-nav-item>
             </b-navbar-nav>
           </b-navbar-nav>
 
@@ -78,7 +78,7 @@ export default {
   layout: "home-page",
   data () {
     return {
-      LoggedIn: true
+      LoggedIn: false
     }
   },
 }

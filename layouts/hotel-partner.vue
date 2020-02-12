@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import Navbar from '~/components/NavbarForTourGuide'
+  import Navbar from '~/components/NavbarForHotelPartner'
   // import TheHeader from '~/components/Navigation/TheHeader'
   // import TheSidenav from '~/components/Navigation/TheSidenav'
 

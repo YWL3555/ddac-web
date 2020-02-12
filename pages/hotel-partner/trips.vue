@@ -2,45 +2,7 @@
   <div>
   <div id="home-img" class="view">
     <section class="trip-section">
-      <h2 style="padding-left: 60px; padding-bottom: 20px;">Profile here</h2>
-      <div class="row tour-guide-info">
-        <div class="col-5 basic-info">
-          <div class="row justify-content-center">
-            <div class="profile-pic">
-              <img src="../../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:250px;
-  height:250px;
-  object-fit:cover;">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col" align="center" >
-              <b-button variant="outline-dark">Upload new profile picture</b-button>
-            </div>
-          </div>
-        </div>
-        <div class="col-6 detail-info">
-          <div class="row">
-            <div class="col">
-              <h1 style="padding-bottom: 10px;">My profile</h1>
-            </div>
-            <div class="col" align="end">
-              <b-button variant="outline-dark" to="/profile/edit">Edit Profile</b-button>
-            </div>
-          </div>
-          <dt>Name</dt>
-          <dd>Yong Wen Li</dd>
-          <dt>Gender</dt>
-          <dd>Male</dd>
-          <dt>TP number</dt>
-          <dd>TP045014</dd>
-          <dt>Email address</dt>
-          <dd>tp045014@mail.apu.edu.my</dd>
-          <dt>Contact number</dt>
-          <dd>018-8888888</dd>
-
-        </div>
-        <div class="col-1"></div>
-      </div>
+      <h2 style="padding-left: 60px; padding-bottom: 20px;">Trips crud here</h2>
     </section>
   </div>
     <nuxt-child/>
@@ -54,7 +16,7 @@ export default {
   components: {
     Logo,
   },
-  layout: "tour-guide"
+  layout: "hotel-partner"
 }
 </script>
 

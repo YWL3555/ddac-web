@@ -2,8 +2,41 @@
   <div>
   <div id="home-img" class="view">
     <section class="trip-section">
-      <h2 style="padding-left: 60px; padding-bottom: 20px;">Tour guide dashboard here</h2>
+      <div class="row">
+        <h2 style="padding-left: 60px; padding-bottom: 20px;">Hotel information</h2>
+        <div class="col" align="end" style="padding-right: 80px">
+          <b-button variant="outline-dark" to="/profile/edit">Edit information</b-button>
+          <b-button variant="outline-dark" to="/profile/edit">Change login password</b-button>
+        </div>
+      </div>
+      <div class="row tour-guide-info">
+        <div class="col-5 basic-info">
+          <div class="row justify-content-center">
+            <div class="pic">
+              <img src="../../assets/img/hotel1.jpg" class="rounded img-fluid trip-pic" style="width:500px;
+  height:280px;
+  object-fit:cover;
+  margin-bottom: 30px;">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" align="center" >
+              <b-button variant="outline-dark">Upload new profile picture</b-button>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 detail-info">
 
+          <dt>Address</dt>
+          <dd>Address here</dd>
+          <dt>Contact number</dt>
+          <dd>018-8888888</dd>
+          <dt>Faciities</dt>
+          <dd>WiFi | Free Parking | Restaurant | 24-Hour Front Desk</dd>
+
+        </div>
+        <div class="col-1"></div>
+      </div>
     </section>
   </div>
     <nuxt-child/>
@@ -15,9 +48,9 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo
+    Logo,
   },
-  layout: "tour-guide"
+  layout: "hotel-partner"
 }
 </script>
 

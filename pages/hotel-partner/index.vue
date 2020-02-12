@@ -2,7 +2,8 @@
   <div>
   <div id="home-img" class="view">
     <section class="trip-section">
-      <h2 style="padding-left: 60px; padding-bottom: 20px;">Private booking crud here</h2>
+      <h2 style="padding-left: 60px; padding-bottom: 20px;">Tour guide dashboard here</h2>
+
     </section>
   </div>
     <nuxt-child/>
@@ -14,9 +15,9 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {
-    Logo,
+    Logo
   },
-  layout: "tour-guide"
+  layout: "hotel-partner"
 }
 </script>
 

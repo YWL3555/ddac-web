@@ -15,7 +15,7 @@
         <b-nav-item-dropdown text="Login as" right>
           <b-dropdown-item to="/login">Customer</b-dropdown-item>
           <b-dropdown-item to="/login/admin">Administrator</b-dropdown-item>
-          <b-dropdown-item to="/login/tour-guide">Hotel partner</b-dropdown-item>
+          <b-dropdown-item to="/login/hotel-partner">iHotel partner</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
