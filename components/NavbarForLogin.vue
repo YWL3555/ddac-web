@@ -1,7 +1,7 @@
 <template>
   <div>
   <b-navbar toggleable="lg" type="dark" class="navbar-inner">
-    <b-navbar-brand to="/">APU Tour Guide Booking System</b-navbar-brand>
+    <b-navbar-brand to="/">iHotel</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -13,9 +13,9 @@
       <b-navbar-nav class="ml-auto">
 
         <b-nav-item-dropdown text="Login as" right>
-          <b-dropdown-item to="/login">Student</b-dropdown-item>
+          <b-dropdown-item to="/login">Customer</b-dropdown-item>
           <b-dropdown-item to="/login/admin">Administrator</b-dropdown-item>
-          <b-dropdown-item to="/login/tour-guide">Tour guide</b-dropdown-item>
+          <b-dropdown-item to="/login/tour-guide">Hotel partner</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>

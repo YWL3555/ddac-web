@@ -5,18 +5,24 @@
     @hidden="closeModal"
     @ok="onOkClick"
   >
-    <h2>Cancel trip</h2>
+    <h2>Review</h2>
+    <star-rating></star-rating>
   </b-modal>
 </template>
 
 <script>
+  import StarRating from 'vue-star-rating'
+
   export default {
+    components: {
+      StarRating
+    },
     methods: {
       closeModal () {
-        this.$router.push(`/my-trips`)
+        this.$router.push(`/my-bookings`)
       },
       onOkClick () {
-        this.$router.push(`/my-trips`)
+        this.$router.push(`/my-bookings`)
       }
     },
     data () {

@@ -7,8 +7,12 @@
         <div class="row">
           <div class="col-lg-5 text-left">
             <div class="card card-search">
-              <h3>Login</h3>
+              <h3>Sign up</h3>
               <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Username</label>
+                  <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your username">
+                </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email</label>
                   <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
@@ -17,10 +21,14 @@
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
                 </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Enter your password again">
+                </div>
 
-                <b-button type="submit" variant="btn btn-dark float-right" to="/">Login</b-button>
+                <b-button type="submit" variant="btn btn-dark float-right" to="/signup-confirmation">Sign up</b-button>
               </form>
-              <n-link to="/signup" >Don't have an account? Sign up now!</n-link>
+              <n-link to="/login" >Have an account? Login now!</n-link>
             </div>
           </div>
           <div class="col-lg-6">
@@ -47,7 +55,7 @@ export default {
 <style scoped>
   #home-img {
     height: 100%;
-    background: url("../../assets/img/kualalumpurcityscape.jpg")no-repeat fixed;
+    background: url("../assets/img/kualalumpurcityscape.jpg")no-repeat fixed;
     background-size: cover;
     min-height: 800px;
   }

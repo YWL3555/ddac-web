@@ -20,7 +20,7 @@
             </b-navbar-nav>
             <b-nav-item-dropdown text="Yong Wen Li" right>
               <b-dropdown-item to="/profile">Profile</b-dropdown-item>
-              <b-dropdown-item href="/my-trips">My bookings</b-dropdown-item>
+              <b-dropdown-item href="/my-bookings">My bookings</b-dropdown-item>
               <b-dropdown-item href="/login">Sign out</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>

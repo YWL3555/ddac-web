@@ -27,7 +27,7 @@
     },
     data () {
       return {
-        loggedIn: false
+        loggedIn: true
       }
     }
   }

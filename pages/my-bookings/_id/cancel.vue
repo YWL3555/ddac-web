@@ -4,8 +4,9 @@
     size="xl"
     @hidden="closeModal"
     @ok="onOkClick"
+    ok-title="Yes"
   >
-    <h2>Review</h2>
+    <h2>Are you sure you want to cancel this booking?</h2>
 
   </b-modal>
 </template>
@@ -14,10 +15,10 @@
   export default {
     methods: {
       closeModal () {
-        this.$router.push(`/my-trips`)
+        this.$router.push(`/my-bookings`)
       },
       onOkClick () {
-        this.$router.push(`/my-trips`)
+        this.$router.push(`/my-bookings`)
       }
     },
     data () {
