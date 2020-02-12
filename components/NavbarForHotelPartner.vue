@@ -16,7 +16,7 @@
       <b-navbar-nav class="ml-auto">
 
         <b-navbar-nav>
-          <b-nav-item to="/hotel-partner/trips">Room types</b-nav-item>
+          <b-nav-item to="/hotel-partner/room-type">Room types</b-nav-item>
           <b-nav-item to="/hotel-partner/booking">Bookings</b-nav-item>
           <b-nav-item to="/hotel-partner/ratings-reviews">Ratings and reviews</b-nav-item>
         </b-navbar-nav>
