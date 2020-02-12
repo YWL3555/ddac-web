@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar/>
+    <navbar :loggedIn="loggedIn" />
     <div class="main">
       <nuxt />
     </div>
@@ -27,6 +27,7 @@
     },
     data () {
       return {
+        loggedIn: false
       }
     }
   }

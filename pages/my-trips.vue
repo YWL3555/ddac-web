@@ -2,7 +2,7 @@
   <div>
   <div id="home-img" class="view">
     <section class="trip-section">
-      <h2 style="padding-left: 60px; padding-bottom: 20px;">My trips</h2>
+      <h2 style="padding-left: 60px; padding-bottom: 20px;">My bookings</h2>
       <div class="container" style="min-width:1360px; padding-bottom: 30px;">
         <div class="trip-card" style="border: 0px;">
           <div class="card-body">
