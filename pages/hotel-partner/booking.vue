@@ -6,7 +6,7 @@
 
 
         <div class="col-md-12">
-          <h4>User CRUD</h4>
+          <h4>Booking CRUD</h4>
           <div class="table-responsive">
 
 
