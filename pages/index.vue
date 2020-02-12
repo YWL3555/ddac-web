@@ -56,7 +56,7 @@
                   <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp" placeholder="DD/MM/YYYY">
                 </div>
 
-                <button type="submit" class="btn btn-dark float-right">Search</button>
+                <b-button type="submit" variant="btn btn-dark float-right" to="/hotel">Search</b-button>
               </form>
             </div>
           </div>
