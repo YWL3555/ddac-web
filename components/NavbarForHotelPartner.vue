@@ -17,8 +17,8 @@
 
         <b-navbar-nav>
           <b-nav-item to="/hotel-partner/trips">Room types</b-nav-item>
-          <b-nav-item to="/hotel-partner/private-booking">Bookings</b-nav-item>
-          <b-nav-item to="/hotel-partner/private-booking">Ratings and reviews</b-nav-item>
+          <b-nav-item to="/hotel-partner/booking">Bookings</b-nav-item>
+          <b-nav-item to="/hotel-partner/ratings-reviews">Ratings and reviews</b-nav-item>
         </b-navbar-nav>
 
         <b-nav-item-dropdown text="iHotel Partner" right>

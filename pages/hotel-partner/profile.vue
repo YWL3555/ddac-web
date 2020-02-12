@@ -21,7 +21,7 @@
           </div>
           <div class="row">
             <div class="col" align="center" >
-              <b-button variant="outline-dark">Upload new profile picture</b-button>
+              <b-button variant="outline-dark">Upload new picture</b-button>
             </div>
           </div>
         </div>
