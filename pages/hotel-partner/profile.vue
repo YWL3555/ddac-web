@@ -33,6 +33,8 @@
           <dd>018-8888888</dd>
           <dt>Faciities</dt>
           <dd>WiFi | Free Parking | Restaurant | 24-Hour Front Desk</dd>
+          <dt>Status</dt>
+          <dd>Published</dd>
 
         </div>
         <div class="col-1"></div>
