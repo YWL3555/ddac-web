@@ -7,7 +7,7 @@
 
 
           <div class="col-md-12">
-            <h4>Hotel CRUD</h4>
+            <h4>iHotel Partner CRUD</h4>
             <div class="table-responsive">
 
 

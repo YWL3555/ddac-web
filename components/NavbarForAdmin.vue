@@ -16,7 +16,7 @@
       <b-navbar-nav class="ml-auto">
 
         <b-navbar-nav>
-          <b-nav-item to="/admin/hotel">Hotels</b-nav-item>
+          <b-nav-item to="/admin/hotel">iHotel partners</b-nav-item>
         </b-navbar-nav>
 
         <b-nav-item-dropdown text="Admin" right>
