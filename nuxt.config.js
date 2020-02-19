@@ -1,6 +1,5 @@
-import pkg from './package'
 
-export default {
+module.exports = {
   mode: 'spa',
   server: {
     port: 5050, // default: 3000
