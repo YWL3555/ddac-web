@@ -8,8 +8,12 @@
     <h2>Hotel availability</h2>
     <p>Select dates for your trip</p>
     <div>
-      <label for="trip-guests">Guests</label>
+      <label for="trip-guests">Pax</label>
       <b-form-input id="trip-guests" type="number" v-model="selectedg" min="1"></b-form-input>
+    </div>
+    <div>
+      <label for="trip-guests">Room type</label>
+      <b-form-input id="trip-guests" v-model="selectede"></b-form-input>
     </div>
     <div>
       <label for="trip-dates">Dates</label>
@@ -31,6 +35,7 @@
     data () {
       return {
         selectedg: 1,
+        seletecde: ["Superior Room"],
         selectedd: 'A',
         optionsg: [
           { value: 'A', text: 'Option A (from options prop)' },

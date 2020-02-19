@@ -11,17 +11,17 @@
                 <img src="../assets/img/post2.jpg" class="img rounded" style="max-width: 265px; height: 150px;"/>
               </div>
               <div class="col-md-9">
-                <h5><span class="badge badge-warning">Upcoming</span> Experience the beauty of Kuala Lumpur</h5>
+                <h5><span class="badge badge-warning">Upcoming</span> The Element KL</h5>
                 <div style="display:inline-block; padding-right: 30px;">
                   <dt >Date</dt>
-                  <dd >2/3/2020 - 4/3/2020</dd>
+                  <dd >22/3/2020 - 24/3/2020</dd>
                 </div>
                 <div style="display:inline-block;">
-                  <dt>Guests</dt>
-                  <dd>5</dd>
+                  <dt>Pax</dt>
+                  <dd>3</dd>
                 </div>
                 <div>
-                  <b-button variant="outline-danger" to="/my-bookings/3/cancel">Cancel trip</b-button>
+                  <b-button variant="outline-danger" to="/my-bookings/3/cancel">Cancel booking</b-button>
                 </div>
 
               </div>
@@ -32,17 +32,17 @@
                 <img src="../assets/img/post1.jpg" class="img rounded" style="max-width: 265px; height: 150px;"/>
               </div>
               <div class="col-md-9">
-                <h5><span class="badge badge-warning">Upcoming</span> Experience the beauty of Kuala Lumpur</h5>
+                <h5><span class="badge badge-warning">Upcoming</span>Golden Hotel Ipoh</h5>
                 <div style="display:inline-block; padding-right: 30px;">
                   <dt >Date</dt>
                   <dd >2/3/2020 - 4/3/2020</dd>
                 </div>
                 <div style="display:inline-block;">
-                  <dt>Guests</dt>
-                  <dd>5</dd>
+                  <dt>Pax</dt>
+                  <dd>1</dd>
                 </div>
                 <div>
-                  <b-button variant="outline-danger" to="/my-bookings/3/cancel">Cancel trip</b-button>
+                  <b-button variant="outline-danger" to="/my-bookings/3/cancel">Cancel booking</b-button>
                 </div>
 
               </div>
@@ -53,14 +53,14 @@
                 <img src="../assets/img/post4.jpg" class="img rounded" style="max-width: 265px; height: 150px;"/>
               </div>
               <div class="col-md-9">
-                <h5><span class="badge badge-success">Ended</span> Experience the beauty of Kuala Lumpur</h5>
+                <h5><span class="badge badge-success">Ended</span> The Palace KL</h5>
                 <div style="display:inline-block; padding-right: 30px;">
                   <dt >Date</dt>
-                  <dd >2/3/2020 - 4/3/2020</dd>
+                  <dd >2/2/2020 - 4/2/2020</dd>
                 </div>
                 <div style="display:inline-block;">
-                  <dt>Guests</dt>
-                  <dd>5</dd>
+                  <dt>Pax</dt>
+                  <dd>4</dd>
                 </div>
                 <div>
                   <b-button variant="outline-primary" to="/my-bookings/1/review">Give review</b-button>

@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/2f7c6b7d-23b9-46f7-a651-3baebe852fe4/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/hotel-booking-system-ddac",
+    "appService.deploySubpath": ""
+}

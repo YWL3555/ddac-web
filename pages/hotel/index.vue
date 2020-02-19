@@ -3,9 +3,6 @@
   <div id="home-img" class="view">
     <div>
       <h1>Hotels</h1>
-      <div>
-        All | City Tour | Suburb Experience | Island Hopping | Cultural Experience | Food Trip
-      </div>
     </div>
     <section class="posts">
       <div class="row">
@@ -87,8 +84,8 @@
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">The Penthouse KLCC</div>
-                    <div class="content-date">RM650 / night</div>
+                    <div class="content-title">Golden House KLCC</div>
+                    <div class="content-date">RM449 / night</div>
                   </div>
                 </div>
               </div>
@@ -103,14 +100,14 @@
                 <img class="card-img-top" src="../../assets/img/post5.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Kuala Lumpur</h5>
+                    <h5 class="card-title">Penang</h5>
                     <div>
                       <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">The Penthouse KLCC</div>
-                    <div class="content-date">RM650 / night</div>
+                    <div class="content-title">The Dorm Penang</div>
+                    <div class="content-date">RM250 / night</div>
                   </div>
                 </div>
               </div>
@@ -122,7 +119,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/hotel/6'>
               <div>
-                <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/post6.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h5 class="card-title">Kuala Lumpur</h5>
@@ -131,8 +128,8 @@
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">The Penthouse KLCC</div>
-                    <div class="content-date">RM650 / night</div>
+                    <div class="content-title">KL Youth Hostel</div>
+                    <div class="content-date">RM150 / night</div>
                   </div>
                 </div>
               </div>
@@ -143,17 +140,17 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/hotel/7'>
               <div>
-                <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/post7.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Kuala Lumpur</h5>
+                    <h5 class="card-title">Ipoh</h5>
                     <div>
                       <h5 class="card-title-rating">★ 4.54 (7)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">The Penthouse KLCC</div>
-                    <div class="content-date">RM650 / night</div>
+                    <div class="content-title">The Palace Ipoh</div>
+                    <div class="content-date">RM350 / night</div>
                   </div>
                 </div>
               </div>
@@ -165,7 +162,7 @@
           <div class="card" style="width: 18rem;" >
             <n-link to='/hotel/8'>
               <div>
-                <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
+                <img class="card-img-top" src="../../assets/img/post8.jpg" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h5 class="card-title">Kuala Lumpur</h5>
@@ -174,8 +171,8 @@
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">The Penthouse KLCC</div>
-                    <div class="content-date">RM650 / night</div>
+                    <div class="content-title">Happy Hotel KLCC</div>
+                    <div class="content-date">RM250 / night</div>
                   </div>
                 </div>
               </div>
