@@ -7,7 +7,15 @@
 
 
           <div class="col-md-12">
-            <h4>iHotel Partner CRUD</h4>
+            <div class="row">
+              <div class="col">
+                <h4>iHotel partners</h4>
+              </div>
+              <div class="col" align="end" style="padding-bottom: 20px">
+                <b-button variant="outline-dark" to="/admin/hotel/create">New iHotel partner</b-button>
+              </div>
+            </div>
+
             <div class="table-responsive">
 
 
@@ -15,53 +23,55 @@
 
                 <thead>
 
-                <th><input type="checkbox" id="checkall" /></th>
-                <th>Userame</th>
+                <th>Username</th>
                 <th>Hotel</th>
                 <th>Email</th>
-                <th></th>
+                <th>Status</th>
 
                 <th></th>
                 </thead>
                 <tbody>
 
                 <tr>
-                  <td><input type="checkbox" class="checkthis" /></td>
-                  <td>goldenhotel</td>
-                  <td>Golden Hotel</td>
-                  <td>goldenhotel@gmail.com</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></button></p></td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></button></p></td>
+                  <td>ywl3344</td>
+                  <td>Big Hotel</td>
+                  <td>ywl3555@gmail.com</td>
+                  <td>Active</td>
+                  <td><p data-placement="top" data-toggle="tooltip" title="Block"><b-button to="/admin/hotel/1/block" class="btn btn-danger btn-xs" data-title="Block" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Block</span></b-button></p></td>
                 </tr>
 
                 <tr>
-                  <td><input type="checkbox" class="checkthis" /></td>
-                  <td>elementkl</td>
-                  <td>Element Hotel KL</td>
-                  <td>elementkl@gmail.com</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></button></p></td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></button></p></td>
+
+                  <td>ywl3344</td>
+                  <td>Big Hotel</td>
+                  <td>ywl3555@gmail.com</td>
+                  <td>Active</td>
+                  <td><p data-placement="top" data-toggle="tooltip" title="Block"><button class="btn btn-danger btn-xs" data-title="Block" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Block</span></button></p></td>
                 </tr>
 
 
                 <tr>
-                  <td><input type="checkbox" class="checkthis" /></td>
-                  <td>thepalaceipoh</td>
-                  <td>The Palace Ipoh</td>
-                  <td>thepalaceipoh@gmail.com</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></button></p></td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></button></p></td>
+
+                  <td>ywl3344</td>
+                  <td>Big Hotel</td>
+                  <td>ywl3555@gmail.com</td>
+                  <td>Blocked</td>
+                  <td><p data-placement="top" data-toggle="tooltip" title="Block"><button class="btn btn-danger btn-xs" data-title="Block" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Block</span></button></p></td>
                 </tr>
 
 
 
-                
+
+
+
+
+
 
                 </tbody>
 
               </table>
 
-              
+              <div class="clearfix"></div>
 
             </div>
 
