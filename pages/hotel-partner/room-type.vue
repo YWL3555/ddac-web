@@ -8,7 +8,7 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col">
-              <h4>Room Types CRUD</h4>
+              <h4>Room Types</h4>
             </div>
             <div class="col" align="end" style="padding-bottom: 20px">
               <b-button variant="outline-dark" to="/hotel-partner/room-type/create">New room type</b-button>
@@ -22,7 +22,7 @@
 
               <thead>
 
-              <th>Name</thQuantity>
+              <th>Name</th>
               <th>Price</th>
               <th>Quantity</th>
               <th>Maximum Pax</th>
