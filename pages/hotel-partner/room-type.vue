@@ -22,7 +22,6 @@
 
               <thead>
 
-              <th><input type="checkbox" id="checkall" /></th>
               <th>Name</thQuantity>
               <th>Price</th>
               <th>Quantity</th>
@@ -34,7 +33,6 @@
               <tbody>
 
               <tr>
-                <td><input type="checkbox" class="checkthis" /></td>
                 <td>Individual Room</td>
                 <td>149</td>
                 <td>8</td>
@@ -44,7 +42,7 @@
               </tr>
 
               <tr>
-                <td><input type="checkbox" class="checkthis" /></td>
+
                 <td>Deluxe Room</td>
                 <td>349</td>
                 <td>4</td>
@@ -55,7 +53,7 @@
 
 
               <tr>
-                <td><input type="checkbox" class="checkthis" /></td>
+
                 <td>Superior Room</td>
                 <td>549</td>
                 <td>2</td>
