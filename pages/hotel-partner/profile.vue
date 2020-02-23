@@ -5,7 +5,7 @@
       <div class="row">
         <h2 style="padding-left: 60px; padding-bottom: 20px;">Hotel information</h2>
         <div class="col" align="end" style="padding-right: 80px">
-          <b-button variant="outline-dark" to="/profile/edit">Edit information</b-button>
+          <b-button variant="outline-dark" to="/hotel-partner/profile/edit">Edit information</b-button>
           <b-button variant="outline-dark" to="/profile/edit">Change login password</b-button>
         </div>
       </div>
@@ -21,12 +21,14 @@
           </div>
           <div class="row">
             <div class="col" align="center" >
-              <b-button variant="outline-dark">Upload new picture</b-button>
+              <b-button variant="outline-dark" to="/hotel-partner/profile/photo-upload">Upload new picture</b-button>
             </div>
           </div>
         </div>
         <div class="col-6 detail-info">
 
+          <dt>Name</dt>
+          <dd>Hotel name here</dd>
           <dt>Address</dt>
           <dd>Address here</dd>
           <dt>Contact number</dt>
