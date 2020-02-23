@@ -6,7 +6,15 @@
 
 
         <div class="col-md-12">
-          <h4>Room Types CRUD</h4>
+          <div class="row">
+            <div class="col">
+              <h4>Room Types CRUD</h4>
+            </div>
+            <div class="col" align="end" style="padding-bottom: 20px">
+              <b-button variant="outline-dark" to="/hotel-partner/room-type/create">New room type</b-button>
+            </div>
+          </div>
+
           <div class="table-responsive">
 
 
@@ -31,8 +39,8 @@
                 <td>149</td>
                 <td>8</td>
                 <td>1</td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></button></p></td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></button></p></td>
+                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><b-button to="/hotel-partner/room-type/1/edit" class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></b-button></p></td>
+                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><b-button to="/hotel-partner/room-type/1/delete" class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></b-button></p></td>
               </tr>
 
               <tr>
@@ -58,7 +66,7 @@
 
 
 
-             
+
 
 
 
