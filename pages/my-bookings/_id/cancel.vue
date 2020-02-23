@@ -6,7 +6,7 @@
     @ok="onOkClick"
     ok-title="Yes"
   >
-    <h2>Are you sure you want to cancel this booking?</h2>
+    <h4>Are you sure you want to cancel this booking?</h4>
 
   </b-modal>
 </template>
@@ -18,6 +18,7 @@
         this.$router.push(`/my-bookings`)
       },
       onOkClick () {
+        console.log(this.$route.params.id);
         this.$router.push(`/my-bookings`)
       }
     },
