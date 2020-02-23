@@ -12,7 +12,7 @@
         </div>
         <div class="row">
           <div class="col" align="center" >
-            <b-button variant="outline-dark">Upload new profile picture</b-button>
+            <b-button variant="outline-dark" to="/profile/photo-upload">Upload new profile picture</b-button>
           </div>
         </div>
       </div>
@@ -46,6 +46,11 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
+  },
+  data () {
+    return {
+      file: null
+    }
   }
 }
 </script>
