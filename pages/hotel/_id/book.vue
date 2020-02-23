@@ -8,16 +8,20 @@
     <h2>Hotel availability</h2>
     <p>Select dates for your trip</p>
     <div>
-      <label for="trip-guests">Pax</label>
-      <b-form-input id="trip-guests" type="number" v-model="selectedg" min="1"></b-form-input>
+      <label for="trip-pax">Pax</label>
+      <b-form-input id="trip-pax" type="number" v-model="booking.pax" min="1"></b-form-input>
     </div>
     <div>
-      <label for="trip-guests">Room type</label>
-      <b-form-input id="trip-guests" v-model="selectede"></b-form-input>
+      <label for="trip-room">Room type</label>
+      <b-form-select v-model="booking.room" :options="roomOptions" id="trip-room"></b-form-select>
     </div>
     <div>
-      <label for="trip-dates">Dates</label>
-      <b-form-select id="trip-dates" v-model="selectedd" :options="optionsd"></b-form-select>
+      <label for="trip-start-date">Start Date</label>
+      <b-form-input id="trip-start-date" type="date" v-model="booking.startDate"></b-form-input>
+    </div>
+    <div>
+      <label for="trip-end-date">Start Date</label>
+      <b-form-input id="trip-end-date" type="date" v-model="booking.endDate"></b-form-input>
     </div>
   </b-modal>
 </template>
@@ -29,6 +33,7 @@
         this.$router.push(`/hotel/${this.$route.params.id}`)
       },
       onOkClick () {
+        console.log(this.booking);
         this.$router.push(`/hotel/confirmation`)
       }
     },
@@ -37,14 +42,16 @@
         selectedg: 1,
         seletecde: ["Superior Room"],
         selectedd: 'A',
-        optionsg: [
-          { value: 'A', text: 'Option A (from options prop)' },
-          { value: 'B', text: 'Option B (from options prop)' }
+        roomOptions: [
+          { value: 'room1', text: 'Room 1' },
+          { value: 'room2', text: 'Room 2' }
         ],
-        optionsd: [
-        { value: 'A', text: 'Tue, Feb 25 - Thur, Feb 29' },
-        { value: 'B', text: 'Mon, Mar 1 - Wed, Mar 3' }
-      ]
+        booking: {
+          pax: 1,
+          room: null,
+          startDate: null,
+          endDate: null
+        }
       }
     },
   }
