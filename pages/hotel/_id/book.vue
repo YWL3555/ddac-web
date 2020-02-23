@@ -6,7 +6,6 @@
     @ok="onOkClick"
   >
     <h2>Hotel availability</h2>
-    <p>Select dates for your trip</p>
     <div>
       <label for="trip-pax">Pax</label>
       <b-form-input id="trip-pax" type="number" v-model="booking.pax" min="1"></b-form-input>
