@@ -181,6 +181,11 @@
         </div>
       </div>
 
+      <div v-for="hotel in hotels" :key="hotel.id">
+        <h4>{{hotel.name}}</h4>
+        <img class="card-img-top" :src="hotel.photo ? hotel.photo : 'https://www.metrorollerdoors.com.au/wp-content/uploads/2018/02/unavailable-image.jpg'" alt="Card image cap">
+      </div>
+
     </section>
   </div>
   </div>
@@ -192,7 +197,14 @@ import Logo from '~/components/Logo.vue'
 export default {
   components: {
     Logo
-  }
+  },
+  asyncData({ $axios }){
+    return $axios.get(`/api/hotels`)
+      .then((res) => {
+        return {hotels:res.data};
+      })
+  },
+  
 }
 </script>
 

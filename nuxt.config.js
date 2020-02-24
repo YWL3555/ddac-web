@@ -43,6 +43,7 @@ export default {
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
+    '@nuxtjs/axios',
   ],
 
   /*
@@ -54,5 +55,8 @@ export default {
     */
     extend(config, ctx) {
     }
-  }
+  },
+  axios: {
+    baseURL: "https://localhost:5001"
+  },
 }
