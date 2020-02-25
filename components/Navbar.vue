@@ -18,10 +18,10 @@
         <b-navbar-nav>
           <b-nav-item to="/hotel">Hotels</b-nav-item>
         </b-navbar-nav>
-        <b-nav-item-dropdown text="Yong Wen Li" right>
+        <b-nav-item-dropdown :text="this.userName ? this.userName : 'Customer' " right>
           <b-dropdown-item to="/profile">Profile</b-dropdown-item>
-          <b-dropdown-item href="/my-bookings">My bookings</b-dropdown-item>
-          <b-dropdown-item href="/login">Sign out</b-dropdown-item>
+          <b-dropdown-item to="/my-bookings">My bookings</b-dropdown-item>
+          <b-dropdown-item @click="logout">Log out</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
 
@@ -38,9 +38,19 @@
 </template>
 
 <script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
   export default {
     props: {
-      loggedIn: Boolean
+      loggedIn: Boolean,
+      userName: String,
+    },
+    methods: {
+      logout () {
+        Cookie.remove('auth');
+        this.$store.commit('setAuth', null);
+        this.$router.push('/login');
+      }
     }
   }
 </script>

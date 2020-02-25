@@ -1,6 +1,6 @@
 <template>
   <div>
-    <navbar :loggedIn="loggedIn" />
+    <navbar :loggedIn="loggedIn" :userName="userName" />
     <div class="main">
       <nuxt />
     </div>
@@ -27,7 +27,8 @@
     },
     data () {
       return {
-        loggedIn: true
+        loggedIn: this.$store.state.auth ? true : false,
+        userName: this.$store.state.auth ? this.$store.state.auth.userName : "Customer",
       }
     }
   }

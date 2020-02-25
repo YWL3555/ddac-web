@@ -13,15 +13,15 @@
           <!-- Right aligned nav items -->
 
 
-          <b-navbar-nav class="ml-auto" v-if="LoggedIn">
+          <b-navbar-nav class="ml-auto" v-if="loggedIn">
 
             <b-navbar-nav>
               <b-nav-item to="/hotel">Hotels</b-nav-item>
             </b-navbar-nav>
-            <b-nav-item-dropdown text="Yong Wen Li" right>
+            <b-nav-item-dropdown :text="userName ? userName : 'Customer' " right>
               <b-dropdown-item to="/profile">Profile</b-dropdown-item>
               <b-dropdown-item href="/my-bookings">My bookings</b-dropdown-item>
-              <b-dropdown-item href="/login">Sign out</b-dropdown-item>
+              <b-dropdown-item @click="logout" >Log out</b-dropdown-item>
             </b-nav-item-dropdown>
           </b-navbar-nav>
 
@@ -70,6 +70,8 @@
 </template>
 
 <script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
 import Logo from '~/components/Logo.vue'
 
 export default {
@@ -78,9 +80,17 @@ export default {
   layout: "home-page",
   data () {
     return {
-      LoggedIn: false
-    }
+        loggedIn: this.$store.state.auth ? true : false,
+        userName: this.$store.state.auth ? this.$store.state.auth.userName : "Customer",
+      }
   },
+  methods: {
+     logout () {
+        Cookie.remove('auth');
+        this.$store.commit('setAuth', null);
+        this.$router.push('/login');
+      }
+  }
 }
 </script>
 
