@@ -47,6 +47,7 @@ export default {
   components: {
     Logo
   },
+  middleware: 'customerAuthenticated',
   data () {
     return {
       file: null

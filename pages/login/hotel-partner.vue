@@ -8,18 +8,18 @@
           <div class="col-lg-5 text-left">
             <div class="card card-search">
               <h3>Login as iHotel Partner</h3>
-              <form>
+              <b-form @submit.prevent="onSubmit">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Username</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your username">
+                  <input type="email" class="form-control" id="exampleInputEmail1" v-model="loginRequest.Email" aria-describedby="emailHelp" placeholder="Enter your username">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" v-model="loginRequest.Password" placeholder="Enter your password">
                 </div>
-
-                <b-button type="submit" variant="btn btn-dark float-right" to="/hotel-partner">Login</b-button>
-              </form>
+<div v-if="loginFailed" style="color: red">Incorrect email or password</div>
+                <b-button type="submit" variant="btn btn-dark float-right">Login</b-button>
+              </b-form>
             </div>
           </div>
           <div class="col-lg-6">
@@ -32,6 +32,8 @@
 </template>
 
 <script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
 import Logo from '~/components/Logo.vue'
 import Navbar from '~/components/NavbarForLogin'
 
@@ -39,7 +41,38 @@ export default {
   components: {
     Navbar
   },
-  layout: "home-page"
+  data() {
+    return {
+      loginRequest: {
+        Email: null,
+        Password: null
+      },
+      loginFailed: false,
+    }
+  },
+  layout: "home-page",
+  methods: {
+    onSubmit() {
+      this.$axios.post(`/api/partner/login`, {
+        Email: this.loginRequest.Email,
+        Password: this.loginRequest.Password,
+      }
+      ).then(res => {
+        const auth = {
+          accessToken: res.data.token,
+          role: "Partner",
+        }
+        this.$store.commit('setAuth', auth) // mutating to store for client rendering
+        Cookie.set('auth', auth) // saving token in cookie for server rendering
+        this.$router.push('/hotel-partner')
+      }).catch(e => {
+        if (e.response.status === 401){
+          console.log("Incorrect password or email.");
+          this.loginFailed = true;
+        }
+      });
+    },
+  }
 }
 </script>
 

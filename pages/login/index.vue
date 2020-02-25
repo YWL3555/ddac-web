@@ -66,7 +66,7 @@ export default {
         const auth = {
           accessToken: res.data.token,
           userName: res.data.userName,
-          role: "customer",
+          role: "Customer",
         }
         this.$store.commit('setAuth', auth) // mutating to store for client rendering
         Cookie.set('auth', auth) // saving token in cookie for server rendering

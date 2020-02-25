@@ -27,6 +27,7 @@
 
 <script>
   export default {
+    middleware: 'customerAuthenticated',
     methods: {
       closeModal () {
         this.$router.push(`/hotel/${this.$route.params.id}`)

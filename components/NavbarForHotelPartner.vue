@@ -23,13 +23,27 @@
 
         <b-nav-item-dropdown text="iHotel Partner" right>
           <b-dropdown-item to="/hotel-partner/profile">Hotel information</b-dropdown-item>
-          <b-dropdown-item to="/login">Sign Out</b-dropdown-item>
+          <b-dropdown-item @click="logout">Log Out</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </div>
 </template>
+
+<script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
+export default {
+  methods: {
+    logout () {
+        Cookie.remove('auth');
+        this.$store.commit('setAuth', null);
+        this.$router.push('/login/hotel-partner');
+      }
+  }
+}
+</script>
 
 <style scoped>
   .nav {

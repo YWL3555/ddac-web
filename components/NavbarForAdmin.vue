@@ -20,13 +20,27 @@
         </b-navbar-nav>
 
         <b-nav-item-dropdown text="Admin" right>
-          <b-dropdown-item to="/login/admin">Sign Out</b-dropdown-item>
+          <b-dropdown-item @click="logout">Sign Out</b-dropdown-item>
         </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </div>
 </template>
+
+<script>
+const Cookie = process.client ? require('js-cookie') : undefined
+
+export default {
+  methods: {
+    logout () {
+        Cookie.remove('auth');
+        this.$store.commit('setAuth', null);
+        this.$router.push('/login/admin');
+      }
+  }
+}
+</script>
 
 <style scoped>
   .nav {

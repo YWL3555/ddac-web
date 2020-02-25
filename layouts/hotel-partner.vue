@@ -28,7 +28,8 @@
     data () {
       return {
       }
-    }
+    },
+    middleware: 'partnerAuthenticated',
   }
 </script>
 
