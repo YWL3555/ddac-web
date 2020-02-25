@@ -48,8 +48,12 @@
       }
     },
     created() {
-      this.hotel.name="yong wen li";
-      this.hotel.contactNumber="0123-2342234"
+      this.hotel.name=this.profile.name;
+      this.hotel.contactNumber=this.profile.contactNumber;
+      this.hotel.address=this.profile.address;
+      this.hotel.city=this.profile.city;
+      this.hotel.state=this.profile.state;
+      this.hotel.facilities=this.profile.facilities;
     },
     data () {
       return {
@@ -66,5 +70,13 @@
         ],
       }
     },
+    asyncData({ $axios, store }){
+    return $axios.get(`/api/partner/profile`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {profile:res.data};
+      })
+  },
   }
 </script>

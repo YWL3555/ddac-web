@@ -13,7 +13,7 @@
         <div class="col-5 basic-info">
           <div class="row justify-content-center">
             <div class="pic">
-              <img src="../../assets/img/hotel1.jpg" class="rounded img-fluid trip-pic" style="width:500px;
+              <img :src="profile.photo" class="rounded img-fluid trip-pic" style="width:500px;
   height:280px;
   object-fit:cover;
   margin-bottom: 30px;">
@@ -28,15 +28,15 @@
         <div class="col-6 detail-info">
 
           <dt>Name</dt>
-          <dd>Hotel name here</dd>
+          <dd>{{profile.name}}</dd>
           <dt>Address</dt>
-          <dd>Address here</dd>
+          <dd>{{profile.address}}</dd>
           <dt>Contact number</dt>
-          <dd>018-8888888</dd>
+          <dd>{{profile.contactNumber}}</dd>
           <dt>Faciities</dt>
           <dd>WiFi | Free Parking | Restaurant | 24-Hour Front Desk</dd>
           <dt>Status</dt>
-          <dd>Published</dd>
+          <dd>{{profile.published ? 'Published' : 'Not Published'}}</dd>
 
         </div>
         <div class="col-1"></div>
@@ -54,7 +54,15 @@ export default {
   components: {
     Logo,
   },
-  layout: "hotel-partner"
+  layout: "hotel-partner",
+  asyncData({ $axios, store }){
+    return $axios.get(`/api/partner/profile`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {profile:res.data};
+      })
+  },
 }
 </script>
 

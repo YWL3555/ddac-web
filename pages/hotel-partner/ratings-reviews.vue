@@ -8,14 +8,14 @@
       <div class="container">
         <div class="card" style="border: 0px;">
           <div class="card-body">
-            <div class="row">
+            <div v-for="ratingReview in ratingReviews" :key="ratingReview.id">
+              <div class="row">
               <div class="col-md-2">
-                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                <p class="text-secondary text-center">15 Minutes Ago</p>
+                <img :src="ratingReview.customer.profilePic" class="img img-rounded img-fluid"/>
               </div>
               <div class="col-md-10">
                 <p>
-                  <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Yong Wen Li</strong></a>
+                  <a class="float-left"><strong>{{ratingReview.customer.name}}</strong></a>
                   <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                   <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                   <span class="float-right"><i class="text-warning fa fa-star"></i></span>
@@ -23,50 +23,13 @@
 
                 </p>
                 <div class="clearfix"></div>
-                <div style="padding: 7px 0px 7px; color:#018489 ; ">★ ★ ★ ★ ★</div>
-                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div style="padding: 7px 0px 7px; color:#018489 ; ">{{ratingReview.rating}} ★</div>
+                <p>{{ratingReview.review}}</p>
               </div>
             </div>
             <hr/>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                <p class="text-secondary text-center">43 Minutes Ago</p>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>David</strong></a>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-
-                </p>
-                <div class="clearfix"></div>
-                <div style="padding: 7px 0px 7px; color:#018489 ; ">★ ★ ★ ★ ★</div>
-                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
             </div>
-            <hr/>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                <p class="text-secondary text-center">57 Minutes Ago</p>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>John</strong></a>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-
-                </p>
-                <div class="clearfix"></div>
-                <div style="padding: 7px 0px 7px; color:#018489 ; ">★ ★ ★ ★ </div>
-                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </div>
@@ -83,7 +46,15 @@ export default {
   components: {
     Logo,
   },
-  layout: "hotel-partner"
+  layout: "hotel-partner",
+  asyncData({ $axios, store }){
+    return $axios.get(`/api/partner/ratingReview`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {ratingReviews:res.data};
+      })
+  },
 }
 </script>
 

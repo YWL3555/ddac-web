@@ -32,41 +32,15 @@
               </thead>
               <tbody>
 
-              <tr>
-                <td>Individual Room</td>
-                <td>149</td>
-                <td>8</td>
-                <td>1</td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><b-button to="/hotel-partner/room-type/1/edit" class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></b-button></p></td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><b-button to="/hotel-partner/room-type/1/delete" class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></b-button></p></td>
-              </tr>
-
-              <tr>
-
-                <td>Deluxe Room</td>
-                <td>349</td>
-                <td>4</td>
-                <td>3</td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></button></p></td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></button></p></td>
+                <tr v-for="roomType in roomTypes" :key="roomType.id">
+                  <td>{{roomType.name}}</td>
+                  <td>{{roomType.price}}</td>
+                  <td>{{roomType.quantity}}</td>
+                  <td>{{roomType.maximumPax}}</td>
+                  <td><p data-placement="top" data-toggle="tooltip" title="Edit"><b-button :to="`/hotel-partner/room-type/${roomType.id}/edit`" class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></b-button></p></td>
+                  <td><p data-placement="top" data-toggle="tooltip" title="Delete"><b-button :to="`/hotel-partner/room-type/${roomType.id}/delete`" class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></b-button></p></td>
+              
                 </tr>
-
-
-              <tr>
-
-                <td>Superior Room</td>
-                <td>549</td>
-                <td>2</td>
-                <td>6</td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Edit"><button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#edit" ><span class="glyphicon glyphicon-pencil">Edit</span></button></p></td>
-                <td><p data-placement="top" data-toggle="tooltip" title="Delete"><button class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Delete</span></button></p></td>
-              </tr>
-
-
-
-
-
-
 
 
 
@@ -93,7 +67,15 @@ export default {
   components: {
     Logo,
   },
-  layout: "hotel-partner"
+  layout: "hotel-partner",
+  asyncData({ $axios, store }){
+    return $axios.get(`/api/partner/roomType`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {roomTypes:res.data};
+      })
+  },
 }
 </script>
 

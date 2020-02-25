@@ -27,12 +27,12 @@
               </thead>
               <tbody>
 
-              <tr>
-                <td>Individual Room</td>
-                <td>2</td>
-                <td>Ali</td>
+              <tr v-for="booking in bookings" :key="booking.id">
+                <td>{{booking.roomType.name}}</td>
+                <td>{{booking.quantity}}</td>
+                <td>{{booking.customer.name}}</td>
                 <td>1/1/2020 - 2/2/2020</td>
-                </tr>
+              </tr>
 
               <tr>
 
@@ -42,14 +42,6 @@
                 <td>1/1/2020 - 2/2/2020</td>
                 </tr>
 
-
-              <tr>
-
-                <td>Superior Room</td>
-                <td>2</td>
-                <td>Muthu</td>
-                <td>1/1/2020 - 2/2/2020</td>
-                </tr>
 
 
 
@@ -82,7 +74,15 @@ export default {
   components: {
     Logo,
   },
-  layout: "hotel-partner"
+  layout: "hotel-partner",
+  asyncData({ $axios, store }){
+    return $axios.get(`/api/partner/booking`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {bookings:res.data};
+      })
+  },
 }
 </script>
 
