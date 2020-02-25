@@ -6,7 +6,7 @@
     @ok="onOkClick"
     ok-title="Yes"
   >
-    <h4>Are you sure you want to block this partner?</h4>
+    <h4>Are you sure you want to unblock this partner?</h4>
 
   </b-modal>
 </template>
@@ -18,12 +18,13 @@
         this.$router.push(`/admin/hotel`)
       },
       onOkClick () {
-        this.$axios.put(`/api/admin/blockPartner?id=${this.$route.params.id}`,"api", {
+        console.log(this.token);
+        this.$axios.put(`/api/admin/unblockPartner?id=${this.$route.params.id}`,"api" , {
   headers: {
     'Authorization': `Bearer ${this.token}`
   }})
         console.log(this.$route.params.id);
-        this.$router.push(`/admin/hotel`)
+        
       }
     },
     data () {

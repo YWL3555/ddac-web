@@ -36,6 +36,18 @@
       },
       onOkClick () {
         console.log(this.hotel);
+        this.$axios.post(`/api/admin/partner`, {
+        Email: this.email,
+        Password: this.password,
+        Username: this.username,
+        HotelName: this.HotelName,
+      },{
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then(res => {
+        this.$router.push('/admin/hotel')
+      })
+      .catch(e => {console.log(e)});
         this.$router.push(`/admin/hotel`)
       }
     },

@@ -23,41 +23,21 @@
 
                 <thead>
 
-                <th>Username</th>
                 <th>Hotel</th>
-                <th>Email</th>
                 <th>Status</th>
 
                 <th></th>
                 </thead>
                 <tbody>
-
-                <tr>
-                  <td>ywl3344</td>
-                  <td>Big Hotel</td>
-                  <td>ywl3555@gmail.com</td>
-                  <td>Active</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Block"><b-button to="/admin/hotel/1/block" class="btn btn-danger btn-xs" data-title="Block" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Block</span></b-button></p></td>
+                <tr v-for="partner in partners" :key="partner.id">
+                  
+                  <td>{{partner.hotel.name}}</td>
+                  
+                  <td>{{partner.partnerStatus ? 'Active' : 'Blocked'}}</td>
+                  <td><p data-placement="top" data-toggle="tooltip" title="Block"><b-button :to="partner.partnerStatus ? '/admin/hotel/'+partner.id+'/block' : '/admin/hotel/'+partner.id+'/unblock' " class="btn btn-danger btn-xs" data-title="Block" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">{{partner.partnerStatus ? 'Block' : 'Unblock'}}</span></b-button></p></td>
                 </tr>
 
-                <tr>
-
-                  <td>ywl3344</td>
-                  <td>Big Hotel</td>
-                  <td>ywl3555@gmail.com</td>
-                  <td>Active</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Block"><button class="btn btn-danger btn-xs" data-title="Block" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Block</span></button></p></td>
-                </tr>
-
-
-                <tr>
-
-                  <td>ywl3344</td>
-                  <td>Big Hotel</td>
-                  <td>ywl3555@gmail.com</td>
-                  <td>Blocked</td>
-                  <td><p data-placement="top" data-toggle="tooltip" title="Block"><button class="btn btn-danger btn-xs" data-title="Block" data-toggle="modal" data-target="#delete" ><span class="glyphicon glyphicon-trash">Block</span></button></p></td>
-                </tr>
+                
 
 
 
@@ -91,7 +71,15 @@ export default {
   components: {
     Logo,
   },
-  layout: "admin"
+  layout: "admin",
+  asyncData({ $axios, store }){
+    return $axios.get(`/api/admin/partner`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {partners:res.data};
+      })
+  },
 }
 </script>
 
