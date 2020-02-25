@@ -8,26 +8,26 @@
           <div class="col-lg-5 text-left">
             <div class="card card-search">
               <h3>Sign up</h3>
-              <form>
+              <b-form @submit.prevent="onSubmit">
                 <div class="form-group">
                   <label for="exampleInputEmail1">Username</label>
-                  <input type="email" class="form-control" id="exampleInputName" aria-describedby="emailHelp" placeholder="Enter your username">
+                  <input type="text" class="form-control" id="exampleInputName" v-model="username" aria-describedby="emailHelp" placeholder="Enter your username">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputEmail1">Email</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your email address">
+                  <input type="email" class="form-control" id="exampleInputEmail1" v-model="email" aria-describedby="emailHelp" placeholder="Enter your email address">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter your password">
+                  <input type="password" class="form-control" id="exampleInputPassword1" v-model="password" placeholder="Enter your password">
                 </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Confirm Password</label>
-                  <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Enter your password again">
+                  <input type="password" class="form-control" id="exampleInputConfirmPassword1" v-model="confirmPassword" placeholder="Enter your password again">
                 </div>
 
-                <b-button type="submit" variant="btn btn-dark float-right" to="/signup-confirmation">Sign up</b-button>
-              </form>
+                <b-button type="submit" variant="btn btn-dark float-right">Sign up</b-button>
+              </b-form>
               <n-link to="/login" >Have an account? Login now!</n-link>
             </div>
           </div>
@@ -48,7 +48,31 @@ export default {
   components: {
     Navbar
   },
-  layout: "home-page"
+  layout: "home-page",
+  data() {
+    return {
+      username: null,
+      email: null,
+      password: null,
+      confirmPassword: null,
+    }
+  },
+  methods: {
+    onSubmit() {
+      if (this.password !== this.confirmPassword){
+        return;
+      }
+      this.$axios.post(`/api/customer/signup`, {
+        Email: this.email,
+        Password: this.password,
+        Username: this.username,
+      }
+      ).then(res => {
+        this.$router.push('/signup-confirmation')
+      })
+      .catch(e => {console.log(e)});
+    }
+  }
 }
 </script>
 
