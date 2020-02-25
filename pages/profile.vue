@@ -5,7 +5,7 @@
       <div class="col-5 basic-info">
         <div class="row justify-content-center">
           <div class="profile-pic">
-            <img src="../assets/img/profilepic.jpg" class="rounded-circle img-fluid" style="width:250px;
+            <img :src="profile.profilePic" class="rounded-circle img-fluid" style="width:250px;
   height:250px;
   object-fit:cover;">
           </div>
@@ -26,11 +26,11 @@
           </div>
         </div>
         <dt>Name</dt>
-        <dd>Yong Wen Li</dd>
+        <dd>{{profile.name}}</dd>
         <dt>Email address</dt>
-        <dd>tp045014@mail.apu.edu.my</dd>
+        <dd>{{profile.email}}</dd>
         <dt>Contact number</dt>
-        <dd>018-8888888</dd>
+        <dd>{{profile.contactNumber}}</dd>
 
       </div>
       <div class="col-1"></div>
@@ -52,7 +52,15 @@ export default {
     return {
       file: null
     }
-  }
+  },
+  asyncData({ $axios, store }){
+    return $axios.get(`/api/customer/profile`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {profile:res.data};
+      })
+  },
 }
 </script>
 
