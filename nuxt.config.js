@@ -57,6 +57,6 @@ export default {
     }
   },
   axios: {
-    baseURL: "https://localhost:5001"
+    baseURL: "https://ddac-api.azurewebsites.net"
   },
 }
