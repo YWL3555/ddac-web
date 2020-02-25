@@ -57,6 +57,6 @@ export default {
     }
   },
   axios: {
-    baseURL: "https://ddac-api.azurewebsites.net"
+    baseURL: "https://ddacapi20200226052326.azurewebsites.net"
   },
 }

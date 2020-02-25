@@ -36,14 +36,14 @@
       },
       onOkClick () {
         console.log(this.hotel);
-        this.$axios.post(`/api/admin/partner`, {
-        Email: this.email,
-        Password: this.password,
-        Username: this.username,
-        HotelName: this.HotelName,
+        return this.$axios.post(`/api/admin/partner`, {
+        Email: this.hotel.email,
+        Password: this.hotel.password,
+        Username: this.hotel.username,
+        HotelName: this.hotel.HotelName,
       },{
   headers: {
-    'Authorization': `Bearer ${store.state.auth.accessToken}`
+    'Authorization': `Bearer ${this.$store.state.auth.accessToken}`
   }}).then(res => {
         this.$router.push('/admin/hotel')
       })

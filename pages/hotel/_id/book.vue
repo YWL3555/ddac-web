@@ -43,8 +43,8 @@
         seletecde: ["Superior Room"],
         selectedd: 'A',
         roomOptions: [
-          { value: 'room1', text: 'Room 1' },
-          { value: 'room2', text: 'Room 2' }
+          { value: 'room1', text: 'Double Room' },
+          { value: 'room2', text: 'Superior Room' }
         ],
         booking: {
           pax: 1,

@@ -6,42 +6,21 @@
     </div>
     <section class="posts">
       <div class="row">
-        <div class="col-sm-3 post-box">
-      <div class="card" style="width: 18rem;" >
-        <n-link to='/hotel/1'>
-          <div>
-            <img class="card-img-top" src="../../assets/img/post1.jpg" alt="Card image cap">
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <h5 class="card-title">Kuala Lumpur</h5>
-                <div>
-                  <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                </div>
-              </div>
-              <div class="card-main-content">
-                <div class="content-title">Hotel Istana Kuala Lumpur</div>
-                <div class="content-date">RM650 / night</div>
-              </div>
-            </div>
-          </div>
-        </n-link>
-      </div>
-        </div>
-        <div class="col-sm-3 post-box">
+        <div class="col-sm-3 post-box" v-for="hotel in hotels" :key="hotel.id">
           <div class="card" style="width: 18rem;" >
-            <n-link to='/hotel/2'>
+            <n-link :to='`/hotel/${hotel.hotel.id}`'>
               <div>
-                <img class="card-img-top" src="../../assets/img/post2.jpg" alt="Card image cap">
+                <img class="card-img-top" :src="hotel.hotel.photo" alt="Card image cap">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Kuala Lumpur</h5>
+                    <h5 class="card-title">{{hotel.hotel.city}}</h5>
                     <div>
-                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
+                      <h5 class="card-title-rating">★ 4.5 (1)</h5>
                     </div>
                   </div>
                   <div class="card-main-content">
-                    <div class="content-title">Element Hotel</div>
-                    <div class="content-date">RM650 / night</div>
+                    <div class="content-title">{{hotel.hotel.name}}</div>
+                    <div class="content-date">From RM189 / night</div>
                   </div>
                 </div>
               </div>
@@ -49,143 +28,12 @@
           </div>
         </div>
 
-        <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;" >
-            <n-link to='/hotel/3'>
-              <div>
-                <img class="card-img-top" src="../../assets/img/post3.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Kuala Lumpur</h5>
-                    <div>
-                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                    </div>
-                  </div>
-                  <div class="card-main-content">
-                    <div class="content-title">The Penthouse KLCC</div>
-                    <div class="content-date">RM650 / night</div>
-                  </div>
-                </div>
-              </div>
-            </n-link>
-          </div>
-        </div>
 
-        <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;" >
-            <n-link to='/hotel/4'>
-              <div>
-                <img class="card-img-top" src="../../assets/img/post4.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Kuala Lumpur</h5>
-                    <div>
-                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                    </div>
-                  </div>
-                  <div class="card-main-content">
-                    <div class="content-title">Golden House KLCC</div>
-                    <div class="content-date">RM449 / night</div>
-                  </div>
-                </div>
-              </div>
-            </n-link>
-          </div>
-        </div>
-
-        <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;" >
-            <n-link to='/hotel/5'>
-              <div>
-                <img class="card-img-top" src="../../assets/img/post5.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Penang</h5>
-                    <div>
-                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                    </div>
-                  </div>
-                  <div class="card-main-content">
-                    <div class="content-title">The Dorm Penang</div>
-                    <div class="content-date">RM250 / night</div>
-                  </div>
-                </div>
-              </div>
-            </n-link>
-          </div>
-        </div>
-
-        <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;" >
-            <n-link to='/hotel/6'>
-              <div>
-                <img class="card-img-top" src="../../assets/img/post6.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Kuala Lumpur</h5>
-                    <div>
-                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                    </div>
-                  </div>
-                  <div class="card-main-content">
-                    <div class="content-title">KL Youth Hostel</div>
-                    <div class="content-date">RM150 / night</div>
-                  </div>
-                </div>
-              </div>
-            </n-link>
-          </div>
-        </div>
-        <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;" >
-            <n-link to='/hotel/7'>
-              <div>
-                <img class="card-img-top" src="../../assets/img/post7.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Ipoh</h5>
-                    <div>
-                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                    </div>
-                  </div>
-                  <div class="card-main-content">
-                    <div class="content-title">The Palace Ipoh</div>
-                    <div class="content-date">RM350 / night</div>
-                  </div>
-                </div>
-              </div>
-            </n-link>
-          </div>
-        </div>
-
-        <div class="col-sm-3 post-box">
-          <div class="card" style="width: 18rem;" >
-            <n-link to='/hotel/8'>
-              <div>
-                <img class="card-img-top" src="../../assets/img/post8.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">
-                    <h5 class="card-title">Kuala Lumpur</h5>
-                    <div>
-                      <h5 class="card-title-rating">★ 4.54 (7)</h5>
-                    </div>
-                  </div>
-                  <div class="card-main-content">
-                    <div class="content-title">Happy Hotel KLCC</div>
-                    <div class="content-date">RM250 / night</div>
-                  </div>
-                </div>
-              </div>
-            </n-link>
-          </div>
-        </div>
+        
+        
       </div>
 
-      <div v-for="hotel in hotels" :key="hotel.id">
-        <h4>{{hotel.name}}</h4>
-        <img class="card-img-top" :src="hotel.photo ? hotel.photo : 'https://www.metrorollerdoors.com.au/wp-content/uploads/2018/02/unavailable-image.jpg'" alt="Card image cap">
-      </div>
-
+    
     </section>
   </div>
   </div>

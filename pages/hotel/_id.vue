@@ -12,19 +12,19 @@
           <div class="col-lg-7">
             <div class="info">
               <div class="info-1">
-                <h2>Hotel Istana Kuala Lumpur</h2>
-                <h4>Kuala Lumpur, Malaysia</h4>
-                <p>★ 4.32 (43)</p>
+                <h2>{{hotel.hotel.name}}</h2>
+                <h4>{{hotel.hotel.state}}, Malaysia</h4>
+                <p>★ 45 (1)</p>
               </div>
               <div class="info-2">
                 <dt>Address</dt>
-                <dd>73, Jalan Raja Chulan, Bukit Bintang, 50200 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</dd>
+                <dd>{{hotel.hotel.address}}</dd>
                 <dt>Contact Number</dt>
-                <dd>03-2141 9988</dd>
+                <dd>{{hotel.hotel.contactNumber}}</dd>
                 <dt>Facilities</dt>
-                <dd>WiFi | Free Parking | Restaurant | 24-Hour Front Desk</dd>
+                <dd>{{hotel.hotel.facilities}}</dd>
                 <dt>Room Types</dt>
-                <dd><nuxt-link style="color: white" :to="`/hotel/${this.$route.params.id}/rooms`" >3 Room Types · CLick Here to View</nuxt-link></dd>
+                <dd><nuxt-link style="color: white" :to="`/hotel/${this.$route.params.id}/rooms`" >2 Room Types · CLick Here to View</nuxt-link></dd>
               </div>
               <div style="margin-top: 15px; color: white">
                 <b-button variant="danger" style="display:inline;" :to="`/hotel/${this.$route.params.id}/book`" >Book now!</b-button>
@@ -52,14 +52,13 @@
       <div class="container">
         <div class="card" style="border: 0px;">
           <div class="card-body">
-            <div class="row">
+            <div v-for="ratingReview in hotel.ratingReviews" :key="ratingReview.id">
+            <div class="row" >
               <div class="col-md-2">
-                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                <p class="text-secondary text-center">15 Minutes Ago</p>
               </div>
               <div class="col-md-10">
                 <p>
-                  <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Yong Wen Li</strong></a>
+                  <a class="float-left"><strong>{{ratingReview.customer.name}}</strong></a>
                   <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                   <span class="float-right"><i class="text-warning fa fa-star"></i></span>
                   <span class="float-right"><i class="text-warning fa fa-star"></i></span>
@@ -67,50 +66,14 @@
 
                 </p>
                 <div class="clearfix"></div>
-                <div style="padding: 7px 0px 7px; color:#018489 ; ">★ ★ ★ ★ ★</div>
-                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                <div style="padding: 7px 0px 7px; color:#018489 ; ">{{ratingReview.rating}} ★</div>
+                <p>{{ratingReview.review}}</p>
               </div>
             </div>
             <hr/>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                <p class="text-secondary text-center">15 Minutes Ago</p>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Yong Wen Li</strong></a>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-
-                </p>
-                <div class="clearfix"></div>
-                <div style="padding: 7px 0px 7px; color:#018489 ; ">★ ★ ★ ★ ★</div>
-                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
             </div>
-            <hr/>
-            <div class="row">
-              <div class="col-md-2">
-                <img src="https://image.ibb.co/jw55Ex/def_face.jpg" class="img img-rounded img-fluid"/>
-                <p class="text-secondary text-center">15 Minutes Ago</p>
-              </div>
-              <div class="col-md-10">
-                <p>
-                  <a class="float-left" href="https://maniruzzaman-akash.blogspot.com/p/contact.html"><strong>Yong Wen Li</strong></a>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-                  <span class="float-right"><i class="text-warning fa fa-star"></i></span>
-
-                </p>
-                <div class="clearfix"></div>
-                <div style="padding: 7px 0px 7px; color:#018489 ; ">★ ★ ★ ★ </div>
-                <p>Lorem Ipsum is simply dummy text of the pr make  but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-              </div>
-            </div>
+            
+            
           </div>
         </div>
       </div>
@@ -132,7 +95,13 @@ export default {
       let address = this.$route.params.id+".jpg";
       return address;
     }
-  }
+  },
+  asyncData({ $axios, params }){
+    return $axios.get(`/api/hotels/${params.id}`)
+      .then((res) => {
+        return {hotel:res.data};
+      })
+  },
 }
 </script>
 

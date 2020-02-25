@@ -6,6 +6,29 @@
       <div class="container" style="min-width:1360px; padding-bottom: 30px;">
         <div class="trip-card" style="border: 0px;">
           <div class="card-body">
+            <div v-for="booking in bookings" :key="booking.key"> 
+              <div class="row">
+              <div class="col-md-3">
+                <img :src="booking.roomType.photo" class="img rounded" style="max-width: 265px; height: 150px;"/>
+              </div>
+              <div class="col-md-9">
+                <h5><span class="badge badge-warning">Upcoming</span>{{booking.roomType.hotel.name}}</h5>
+                <div style="display:inline-block; padding-right: 30px;">
+                  <dt >Date</dt>
+                  <dd >{{booking.startDate}} - {{booking.endDate}}</dd>
+                </div>
+                <div style="display:inline-block;">
+                  <dt>Pax</dt>
+                  <dd>{{booking.quantity}}</dd>
+                </div>
+                <div>
+                  <b-button variant="outline-danger" :to="`/my-bookings/${booking.id}/cancel`">Cancel booking</b-button>
+                </div>
+
+              </div>
+            </div>
+            <hr/>
+            </div>
             <div class="row">
               <div class="col-md-3">
                 <img src="../assets/img/post2.jpg" class="img rounded" style="max-width: 265px; height: 150px;"/>
@@ -85,6 +108,14 @@ export default {
     Logo
   },
   middleware: 'customerAuthenticated',
+  asyncData({ $axios, store }){
+    return $axios.get(`/api/customer/bookings`, {
+  headers: {
+    'Authorization': `Bearer ${store.state.auth.accessToken}`
+  }}).then((res) => {
+        return {bookings:res.data};
+      })
+  },
 }
 </script>
 

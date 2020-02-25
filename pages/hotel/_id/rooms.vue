@@ -35,18 +35,13 @@
 <!--          </b-carousel-slide>-->
 
           <!-- Slides with image only -->
-          <b-carousel-slide img-src="../../../assets/img/room2.jpg">
-            <h3>Double Room</h3>
-            <h4>RM250 | For maximum 2 pax</h4>
-          </b-carousel-slide>
-          <b-carousel-slide img-src="../../../assets/img/room3.jpg">
-            <h3>Double Room</h3>
-            <h4>RM350 | For maximum 2 pax</h4>
-          </b-carousel-slide>
-          <b-carousel-slide img-src="../../../assets/img/room4.jpg">
-            <h3>Double Room</h3>
-            <h4>RM450 | For maximum 4 pax</h4>
-          </b-carousel-slide>
+          <div v-for="room in rooms" :key="room.id">
+            <b-carousel-slide :img-src="room.photo">
+              <h3>{{room.name}}</h3>
+              <h4>RM{{room.price}} | For maximum {{room.maximumPax}} pax</h4>
+            </b-carousel-slide>
+          </div>
+          
 
           <!-- Slides with img slot -->
           <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
@@ -85,6 +80,12 @@
         this.$router.push(`/hotel/confirmation`)
       }
     },
+    asyncData({ $axios, params }){
+    return $axios.get(`/api/roomTypes/ByHotel?id=${params.id}`)
+      .then((res) => {
+        return {rooms:res.data};
+      })
+  },
     data () {
       return {
         selectedg: 1,
